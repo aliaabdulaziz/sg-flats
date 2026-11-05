@@ -1,0 +1,78 @@
+# Roadmap and proposed structure
+
+## Objective and success criteria
+
+Build a reproducible analyst portfolio project that helps buyers compare trade-offs. Deliver a documented dataset, interpretable findings, a tested current-price model, and an interactive prototype. Success means a reader can reproduce the analysis, understand how the model was evaluated, inspect comparables, and see the limits of the result. Define numerical quality thresholds after the first data audit, before choosing the final model.
+
+## Phase 0 — data audit and design
+
+- Inspect HDB transaction schemas, date range, duplicates, nulls and anomalous prices; document older dataset changes.
+- Obtain HDB property information and investigate building polygons or OneMap for block matching. Test a sample, calculate match rates and inspect errors; preserve unmatched records and their exclusion reasons.
+- Inspect LTA station/exit and bus-stop/route files, keys, licences, coordinates, and actual access. Identify time-stamped historical infrastructure; record gaps.
+- Define unit of analysis, target, as-of date, refresh strategy, licensing and reproducibility. Confirm research questions and sketch an app journey.
+- Deliver: source inventory, feasibility and quality report, proposed data dictionary, unresolved decisions.
+
+## Phase 1 — analysis and machine learning
+
+- Clean transaction and block data; create reproducible transforms and geographic features using a suitable projected coordinate system. Label straight-line distances honestly.
+- Investigate price distributions over time, town, flat type, lease, floor area and transport proximity. Avoid interpreting associations as causal effects.
+- Split by transaction time. Compare a simple recent local median baseline, a regularised regression baseline and a tree-based model. Fit preprocessing only on training data.
+- Report MAE in S$, median absolute error and error by town, flat type, price band and time; report sample counts. Reserve the latest period as final test, using earlier rolling time windows for model selection.
+- Compare models with and without transport features on the same holdout. Use historical infrastructure only where dates can be substantiated; otherwise restrict those features or omit them for historical model training.
+- Investigate uncertainty intervals on held-out data, including observed coverage; do not present an unvalidated range as a calibrated prediction interval. Develop a comparable-sales method and flag insufficient matches.
+- Deliver: reproducible analysis, evaluation and limitations, model artefact and feature definitions; report whether transport improves performance.
+
+## Phase 2 — resale explorer web app
+
+- Prototype a Python app (e.g. Streamlit) with area, budget, flat type and lease filters, a map with MRT and bus stops, and recent transactions.
+- Add flat-input price estimation, comparable sales, data-as-of dates, distance methodology, uncertainty and model limitations. Design for small screens and accessible labels.
+- Verify that app inputs use the exact same preprocessing and units as training. Test missing inputs, low-data areas, model loading, map interaction and representative user journeys.
+- Deploy only after checking hosting, source attribution, data refresh, third-party terms, privacy and running costs. No live listings unless an authorised source is separately obtained.
+- Deliver: usable prototype, deployment instructions and portfolio walkthrough.
+
+## Phase 3 — BTO and future planning
+
+- Add user-entered BTO price, estimated completion date, optional interim housing and renovation budgets; compare with resale now and resale later on a timeline.
+- Show price, timing and costs separately; do not treat mortgage principal as an expense or call a price difference profit. Do not infer eligibility, grants or approval; link to HDB.
+- Provide editable, clearly hypothetical future growth scenarios, with assumptions and the appropriate remaining lease at the future date. Do not present scenario bands as probabilities.
+- Independently assess forecasting using rolling-origin tests for each horizon (e.g. 1 and 4 years), comparing no-change and historical-trend baselines; use only information known at each forecast date. Describe the changing mix of flats in aggregated forecasts.
+- Ship a modelled forecast only if data, backtests, uncertainty and usability justify it; otherwise retain scenarios only.
+- Deliver: comparison view, explanation of assumptions and forecast evaluation report.
+
+## Phase 4 — refinement and portfolio
+
+- Review accuracy and data refresh, improve accessibility, document failures and decisions, and add carefully selected amenities or commute features if reliable data and access permit.
+- Publish a concise case study describing the problem, sources, methodology, findings, measured errors and limitations, plus screenshots/demo.
+
+## Proposed repository structure
+
+This is a target structure; folders should be created as implementation begins, not mistaken for completed code.
+
+```text
+sg-flats/
+├── README.md
+├── docs/
+│   ├── roadmap.md
+│   ├── data-sources.md
+│   ├── data-dictionary.md       # planned
+│   └── model-report.md          # planned
+├── data/
+│   ├── raw/                     # local, ignored; source snapshots
+│   ├── interim/                 # local, ignored
+│   └── processed/               # local, ignored
+├── notebooks/                   # exploratory analysis
+├── src/hdb_explorer/
+│   ├── data/                    # acquisition and cleaning
+│   ├── features/                # geographic and other features
+│   ├── modeling/                # training, evaluation, inference
+│   └── comparables/             # comparable-sale selection
+├── app/                         # planned Streamlit interface
+├── models/                      # generated artefacts, normally ignored
+├── tests/                       # meaningful data and prediction checks
+├── reports/                     # figures and findings
+├── pyproject.toml               # dependencies and project configuration
+├── .env.example                 # names only; never secrets
+└── .gitignore
+```
+
+Data snapshots, derived datasets and model files should only be shared after checking applicable terms and size limits. Keep API keys out of git. The final implementation can simplify this structure as appropriate.
