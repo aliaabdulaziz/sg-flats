@@ -25,11 +25,42 @@ def chart(frame, label, value, filename, title, unit, note):
     for i, (_, r) in enumerate(frame.iterrows()):
         y = 78 + i * row
         w = float(r[value]) / maximum * (width - left - right)
-        parts.extend([f'<text x="{left-12}" y="{y+18}" text-anchor="end" font-size="13">{html.escape(str(r[label]))}</text>',
+        parts.extend([f'<text x="{left-12}" y="{y+18}" text-anchor="end" font-size="13">{html.escape(str(frame[label].iloc[i]))}</text>',
                       f'<rect x="{left}" y="{y}" width="{w:.2f}" height="24" rx="3" fill="#267f85"/>',
                       f'<text x="{left+w+9:.2f}" y="{y+18}" font-size="13">{float(r[value]):,.0f}</text>'])
     parts.extend([f'<text x="24" y="{height-18}" font-size="12">{html.escape(note)}</text>', '</g></svg>'])
     (OUT / 'figures' / filename).write_text('\n'.join(parts) + '\n')
+
+
+def annual_line_chart(frame):
+    """Chronological trend: integer years on x, a zero-based S$ scale on y."""
+    frame = frame.sort_values('year')
+    width, height, left, right, top, bottom = 1000, 530, 105, 70, 100, 405
+    years = frame.year.astype(int).tolist()
+    values = frame.median_price.tolist()
+    ceiling = int(np.ceil(max(values) / 100000)) * 100000
+    x = lambda year: left + (year - min(years)) / max(1, max(years) - min(years)) * (width - left - right)
+    y = lambda price: bottom - price / ceiling * (bottom - top)
+    parts = [f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" viewBox="0 0 {width} {height}" role="img" aria-labelledby="title desc">',
+        '<title id="title">Annual median resale price, 2017–2024</title>',
+        '<desc id="desc">Annual transaction medians in Singapore dollars. Years increase from left to right; the price axis starts at zero. Flat mix can affect the trend.</desc>',
+        '<rect width="100%" height="100%" fill="white"/>',
+        '<g font-family="Arial, sans-serif" fill="#16324f">',
+        '<text x="24" y="32" font-size="21" font-weight="bold">Annual median resale price</text>',
+        '<text x="24" y="57" font-size="13">Singapore dollars · training period 2017–2024 · annual transaction medians</text>']
+    for tick in range(0, ceiling + 1, 100000):
+        parts.extend([f'<line x1="{left}" y1="{y(tick):.2f}" x2="{width-right}" y2="{y(tick):.2f}" stroke="#dce5eb"/>',
+            f'<text x="{left-12}" y="{y(tick)+5:.2f}" text-anchor="end" font-size="13">{tick:,.0f}</text>'])
+    points = ' '.join(f'{x(year):.2f},{y(price):.2f}' for year, price in zip(years, values))
+    parts.append(f'<polyline points="{points}" fill="none" stroke="#267f85" stroke-width="3"/>')
+    for year, price in zip(years, values):
+        parts.extend([f'<text x="{x(year):.2f}" y="{bottom+27}" text-anchor="middle" font-size="13">{year:d}</text>',
+            f'<circle cx="{x(year):.2f}" cy="{y(price):.2f}" r="5" fill="#267f85"><title>{year}: S${price:,.0f}</title></circle>',
+            f'<text x="{x(year):.2f}" y="{y(price)-14:.2f}" text-anchor="middle" font-size="13">{price:,.0f}</text>'])
+    parts.extend(['<text x="515" y="465" text-anchor="middle" font-size="13">Transaction year</text>',
+        '<text x="24" y="505" font-size="12">Unadjusted transaction medians; changes in flat mix can affect the trend. Lines connect annual observations.</text>',
+        '</g></svg>'])
+    (OUT / 'figures/annual-price.svg').write_text('\n'.join(parts) + '\n')
 
 
 def summarise(df, keys):
@@ -120,9 +151,7 @@ def main():
     corr_summary.to_csv(OUT / 'within-group-correlation-summary.csv', index=False, float_format='%.6f')
     rare = tables['flat-type'][['flat_type', 'transactions']].to_dict('records')
     lag_change = (df.nearest_mrt_distance_m - df.nearest_mrt_distance_lag1_m).abs()
-    chart(tables['annual'], 'year', 'median_price', 'annual-price.svg',
-          'Annual median resale price', 'Singapore dollars · training period 2017–2024',
-          'Unadjusted transaction medians; changes in flat mix can affect the trend.')
+    annual_line_chart(tables['annual'])
     chart(tables['flat-type'].sort_values('transactions'), 'flat_type', 'transactions', 'flat-type-support.svg',
           'Transaction coverage by flat type', 'Number of transactions · training period 2017–2024',
           'Rare categories need separate error reporting; counts do not establish accuracy.')

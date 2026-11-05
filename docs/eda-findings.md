@@ -8,6 +8,8 @@ Reproduce with `python analysis/run_training_eda.py` after preparing the modelli
 
 Annual median resale price was S$410,000 in 2017, S$400,000 in 2019 and S$590,000 in 2024. The 2017–2024 increase is about 43.9%. This is a comparison of transactions in each year, not appreciation of the same flat.
 
+The trend uses a line chart with whole-number years on the horizontal axis and Singapore dollars on the vertical axis. Connecting annual observations emphasises chronological change; it does not interpolate individual transactions.
+
 ![Annual median price](../reports/eda/figures/annual-price.svg)
 
 A simple composition sensitivity retains 86 town/flat-type cells with at least 30 transactions in every training year, applies fixed 2017 transaction weights, and averages their annual median prices. It covers 190,618 training transactions. That measure rises from approximately S$434,936 to S$610,314 (40.3%). Broad growth persists after fixing this part of the transaction mix, but differences in lease, size, floor, block and condition within cells remain. This is not HDB's official price index or a repeat-sales index.
@@ -67,6 +69,8 @@ These are unweighted summaries of group correlations, not independent observatio
 Training contains 83,248 four-room, 48,728 five-room and 46,722 three-room transactions, but only 75 one-room and 80 multi-generation transactions. These rare types cannot support confident granular conclusions. Keep them visible in analysis; any app restriction or fallback should follow validation evidence and be documented.
 
 ![Town comparison](../reports/eda/figures/town-price.svg)
+
+Town bars run from lower to higher median S$/m², top to bottom, to support affordability comparisons. A highest-first order would suit an expensive-town ranking; the future explorer should allow either order.
 
 Town medians show substantial variation but pool eight years and different flat mixes. They support location-aware comparisons, not a ranking of the best places to buy. See town/year tables for the underlying support. Repeated source rows remain retained under the existing dataset policy; public records cannot establish whether they are separate sales or errors.
 

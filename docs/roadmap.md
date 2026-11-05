@@ -28,6 +28,19 @@ Initial audit results are in [phase0-audit.md](phase0-audit.md). Downloads, prof
 
 ## Phase 2: Resale explorer web app
 
+### Explore the data page (planned)
+
+- Add a separate historical transaction explorer alongside the shortlist/price-estimate experience. Present a documented, cleaned view of the public transaction records, with source, refresh date, field definitions and data limitations; keep original downloads in the reproducible pipeline.
+- Filter by transaction period, town, flat type, floor area, remaining lease and storey range. Use flat type initially: HDB room labels are not bedroom counts, and the current resale source has no explicit bedroom-count field. Only add a bedroom filter if a reliable mapping or source can support it, clearly marking inferred values.
+- Show a line chart of monthly/quarterly median gross price or median S$/m², with transaction counts. Let users compare a few towns or flat types; keep gross prices and S$/m² clearly separated. Warn that changing transaction mix can change medians.
+- Add transaction scatterplots: floor area or remaining lease versus gross price, coloured by flat type, and optionally transactions over time with a median overlay. Use transparency, aggregation or a clearly disclosed sample for dense plots; compute counts and summaries from the full filtered selection.
+- Add a sortable town comparison, defaulting to lowest median S$/m² first for affordability, with a highest-first option. Include counts and a chosen time window; avoid presenting pooled town medians as model-adjusted location effects.
+- Provide a paginated transaction table with the same active filters. Hover details can show transaction month, block/street, flat type, area, reported floor range, lease and recorded price; no exact unit, current availability or unobserved condition should be inferred. Review source terms before enabling filtered downloads.
+- Keep filters consistent across charts and table, show active filters, reset controls, units and sample counts, and handle empty/small selections explicitly. Use clear chart labels and an accessible table alternative.
+- Keep research and public reporting separate: development EDA stays training-only. A later public historical explorer can display the approved full dataset after final model evaluation is frozen; it must not become a route for tuning against the final test period. Historical summaries remain distinct from predictions and live listings.
+
+### Other app capabilities
+
 - Prototype a Python app (e.g. Streamlit) with area, budget, flat type and lease filters, a map with MRT and bus stops, and recent transactions.
 - Add independent, combinable location filters: (1) Near family / PHG, using a parent or child's address and an approximate 4 km straight-line preset; and (2) Near a place, using an address or postcode and a user-selected radius. Show both areas and highlight matching blocks in the overlap. Resolve and confirm addresses; handle unmatched results.
 - Link the family filter to HDB's official distance enquiry. The app's radius is approximate and neither verifies HDB's distance method nor determines PHG eligibility; prompt users to check shortlisted blocks with HDB, especially near the boundary.
