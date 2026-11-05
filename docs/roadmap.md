@@ -25,6 +25,9 @@ Build a reproducible project that helps buyers compare housing trade-offs. Deliv
 ## Phase 2: Resale explorer web app
 
 - Prototype a Python app (e.g. Streamlit) with area, budget, flat type and lease filters, a map with MRT and bus stops, and recent transactions.
+- Add independent, combinable location filters: (1) Near family / PHG, using a parent or child's address and an approximate 4 km straight-line preset; and (2) Near a place, using an address or postcode and a user-selected radius. Show both areas and highlight matching blocks in the overlap. Resolve and confirm addresses; handle unmatched results.
+- Link the family filter to HDB's official distance enquiry. The app's radius is approximate and neither verifies HDB's distance method nor determines PHG eligibility; prompt users to check shortlisted blocks with HDB, especially near the boundary.
+- Investigate a public-transport commute filter for Near a place, including destination, departure day/time and maximum journey time. Test OneMap routing availability, quotas, costs, coverage and performance before offering it for many blocks; clearly identify estimates and errors. Commute time is not a straight-line radius.
 - Add flat-input price estimation, comparable sales, data-as-of dates, distance methodology, uncertainty and model limitations. Design for small screens and accessible labels.
 - Verify that app inputs use the exact same preprocessing and units as training. Test missing inputs, low-data areas, model loading, map interaction and representative user journeys.
 - Deploy only after checking hosting, source attribution, data refresh, third-party terms, privacy and running costs. No live listings unless an authorised source is separately obtained.
@@ -33,7 +36,9 @@ Build a reproducible project that helps buyers compare housing trade-offs. Deliv
 ## Phase 3: BTO and future planning
 
 - Add user-entered BTO price, estimated completion date, optional interim housing and renovation budgets; compare with resale now and resale later on a timeline.
-- Show price, timing and costs separately; do not treat mortgage principal as an expense or call a price difference profit. Do not infer eligibility, grants or approval; link to HDB.
+- Show price, timing and costs separately; do not treat mortgage principal as an expense or call a price difference profit. Do not determine eligibility, grant entitlement or loan approval; link to HDB.
+- Add a grant discovery guide, separate from the price model, for household circumstances and new/resale choices. Show potentially relevant grants, conditions, official HDB links and last-reviewed dates; mark missing information clearly. Initial version does not calculate eligibility or grant amounts. Allow an optional user-entered grant amount, ideally from an HFE assessment, in comparisons; keep gross purchase price and other costs visible.
+- Treat addresses, household status and financial inputs as sensitive; collect only what is needed, explain whether a postcode is sent to a geocoding provider and avoid storing inputs by default. Connect the PHG guidance to the family filter and HDB's official distance check.
 - Provide editable, clearly hypothetical future growth scenarios, with assumptions and the appropriate remaining lease at the future date. Do not present scenario bands as probabilities.
 - Independently assess forecasting using rolling-origin tests for each horizon (e.g. 1 and 4 years), comparing no-change and historical-trend baselines; use only information known at each forecast date. Describe the changing mix of flats in aggregated forecasts.
 - Ship a modelled forecast only if data, backtests, uncertainty and usability justify it; otherwise retain scenarios only.
@@ -41,7 +46,7 @@ Build a reproducible project that helps buyers compare housing trade-offs. Deliv
 
 ## Phase 4: Refinement and documentation
 
-- Review accuracy and data refresh, improve accessibility, document failures and decisions, and add carefully selected amenities or commute features if reliable data and access permit.
+- Review accuracy and data refresh, improve accessibility, document failures and decisions, and add carefully selected amenities and improve commute features if reliable data and access permit.
 - Publish a concise case study describing the problem, sources, methodology, findings, measured errors and limitations, plus screenshots/demo.
 
 ## Proposed repository structure
