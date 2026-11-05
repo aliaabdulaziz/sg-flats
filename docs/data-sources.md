@@ -27,6 +27,17 @@ These are potential alternatives or later additions; they are not commitments to
 | [MOE school information](https://developers.data.gov.sg/datasets?agencies=Ministry+of+Education+%28MOE%29&resultId=d_688b934f82c1059ed0a6993d2a829089) | School addresses for a potential later amenities layer. | Geocode and check currency and historical coverage. Distance alone does not establish admissions eligibility. |
 | [OpenStreetMap](https://www.openstreetmap.org/copyright) | Potential supplementary map and geographic data. | Check quality and coverage; ODbL attribution and applicable share-alike obligations. Map tiles have separate usage policies. |
 
+| [OneMap routing API](https://www.onemap.gov.sg/apidocs/routing) | Potential walking and public-transport journey estimates to a user-selected destination. | Requires authentication; check quotas, terms, performance and coverage. Test date/time support and clarify estimates are not guarantees. |
+| [HDB rental data from 2021](https://data.gov.sg/datasets/d_c9f57187485a850908655db0e8cfe651/view) | Historical rental context for interim housing scenarios. | Updated historical records, not live listings; rents are owner-declared and HDB does not verify their accuracy. |
+| [OneMap thematic layers](https://www.onemap.gov.sg/apidocs/) | Potential amenity information for later exploration. | Check layer-specific coverage, currency, access and terms. |
+| [LTA bus arrival API](https://datamall.lta.gov.sg/content/datamall/en/dynamic-data.html) | Real-time arrival estimates for services at a selected stop. | Requires DataMall account key; lower priority than routes and useful journey options. |
+
+## Official grant guidance
+
+- [HDB PHG distance enquiry](https://www.hdb.gov.sg/check-distance-for-proximity-housing-grant/get-help): official check for the proximity condition. An app-drawn radius is approximate and is not confirmation of eligibility.
+- [HDB PHG for singles](https://www.hdb.gov.sg/buying-a-flat/flat-grant-and-loan-eligibility/singles/proximity-housing-grant) and [for families](https://www.hdb.gov.sg/buying-a-flat/flat-grant-and-loan-eligibility/couples-and-families/proximity-housing-grant): current conditions for the grant; verify the relevant household and property conditions.
+- [HDB Flat Eligibility letter](https://www.hdb.gov.sg/buying-a-flat/flat-grant-and-loan-eligibility/application-for-an-hdb-flat-eligibility-hfe-letter): official assessment route. Grant guidance in the app should be reviewed and dated as policy changes.
+
 ## Property websites
 
 Use real estate sites for market context and descriptions of buyer problems, and trace numeric claims to their stated original source where possible. For instance, HDB itself publishes BTO launch comparisons and transaction prices. PropertyGuru's [agent content guidelines](https://www.agentofferings.propertyguru.com.sg/help-centre/manage-your-listings/listing-guidelines-and-policies/advertisement-and-content-guidelines-propertyguru-singapore/) prohibit unauthorised automated collection for the agent service; check applicable site terms, obtain permission or use a licensed feed before collecting or republishing listings. Do not assume a public page is open data. Live listings are not required for the initial release.
