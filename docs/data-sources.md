@@ -2,15 +2,26 @@
 
 Research date: 5 November 2026. This is a source review, not a downloaded-data audit: coverage, match rates, schema changes and historical snapshots still need hands-on verification. Check current terms before acquisition, redistribution or deployment.
 
+This is a research inventory, not a list of datasets already used. The proposed core sources below are starting points for the data audit; the remaining sources are optional references or alternatives. We will record which sources are actually adopted after testing coverage, matching and usage terms.
+
+## Proposed core sources
+
 | Source | What it can contribute | Access and limitations |
 |---|---|---|
 | [HDB resale flat prices, 2017 onward](https://data.gov.sg/datasets/d_8b84c4ee58e3cfc0ece0d773c8ca6abc/view) | Registered transaction month, block/street, flat type, floor area, storey range, lease and price. | CSV/API, Singapore Open Data Licence as stated on the dataset. Not current listings or official valuation; condition and exact unit floor are not supplied. |
-| [Older HDB resale price datasets](https://data.gov.sg/datasets?query=resale%20flat%20prices) | Longer history for analysis or forecasting. | Multiple periods and differing definitions (approval vs registration date); check schema and comparability. |
 | [HDB Property Information](https://data.gov.sg/datasets?agencies=HDB&resultId=d_17f5382f26140b1fdae0ba2ef6239d2f) | Block and street, completion year, maximum floor and some building-level characteristics. | CSV; dataset notes no postal-code information. Test address matching and time consistency. |
-| [HDB Existing Building](https://data.gov.sg/datasets?query=bto&resultId=d_16b157c52ed637edd6ba1232e026258d) | Geographic building polygons, block number and postal code may assist block geolocation. | GeoJSON snapshot; linking via street codes and postal code needs investigation. Current buildings do not guarantee historic coverage. |
 | [OneMap Search API](https://www.onemap.gov.sg/apidocs/search) | Geocode HDB addresses and points of interest to coordinates. | Token authentication required. Check matching quality, rate limits, permitted caching and display terms. Search results need validation. |
 | [LTA DataMall static datasets](https://datamall.lta.gov.sg/content/datamall/en/static-data.html) | Train station and station exit locations and station codes; other geospatial layers. | File availability and join fields need verification. Current location does not show opening date; confirm historical network separately. |
 | [LTA DataMall dynamic datasets](https://datamall.lta.gov.sg/content/datamall/en/dynamic-data.html) | Current bus-stop coordinates and bus routes/services. | API access registration; [LTA API terms](https://datamall.lta.gov.sg/content/datamall/en/api-terms-of-service.html) apply. Current routes and stops are not proof of past availability or useful commute times. |
+
+## Additional sources researched
+
+These are potential alternatives or later additions; they are not commitments to use them.
+
+| Source | What it can contribute | Access and limitations |
+|---|---|---|
+| [Older HDB resale price datasets](https://data.gov.sg/datasets?query=resale%20flat%20prices) | Longer history for analysis or forecasting. | Multiple periods and differing definitions (approval vs registration date); check schema and comparability. |
+| [HDB Existing Building](https://data.gov.sg/datasets?query=bto&resultId=d_16b157c52ed637edd6ba1232e026258d) | Geographic building polygons, block number and postal code may assist block geolocation. | GeoJSON snapshot; linking via street codes and postal code needs investigation. Current buildings do not guarantee historic coverage. |
 | [HDB resale statistics and index](https://www.hdb.gov.sg/managing-my-home/selling-a-flat/process-for-selling-a-flat/resale-flat-planning/resale-statistics) | Market-level context and long-run quarterly index; official town/type medians. | Market-wide index is not an individual-flat forecast. Sparse town/type quarters need caution. |
 | [HDB BTO launch annexes](https://www.hdb.gov.sg/-/media/hdb-pulse/news/2026/20260617-HDB-Launches-6952-Flats-Across-7-Projects-in-June-2026-BTO-Sales-Exercise/Annex-A.pdf) | Project prices, location, attributes and nearby resale comparisons for a launch. | PDF example; check launch-by-launch structure and reuse. Price ranges are not guaranteed individual unit prices. Start with user-entered assumptions. |
 | [MOE school information](https://developers.data.gov.sg/datasets?agencies=Ministry+of+Education+%28MOE%29&resultId=d_688b934f82c1059ed0a6993d2a829089) | School addresses for a potential later amenities layer. | Geocode and check currency and historical coverage. Distance alone does not establish admissions eligibility. |
