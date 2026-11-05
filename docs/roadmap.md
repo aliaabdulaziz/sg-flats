@@ -2,9 +2,9 @@
 
 ## Objective and success criteria
 
-Build a reproducible analyst portfolio project that helps buyers compare trade-offs. Deliver a documented dataset, interpretable findings, a tested current-price model, and an interactive prototype. Success means a reader can reproduce the analysis, understand how the model was evaluated, inspect comparables, and see the limits of the result. Define numerical quality thresholds after the first data audit, before choosing the final model.
+Build a reproducible project that helps buyers compare housing trade-offs. Deliver a documented dataset, interpretable findings, a tested current-price model, and an interactive prototype. Success means a reader can reproduce the analysis, understand how the model was evaluated, inspect comparables, and see the limits of the result. Define numerical quality thresholds after the first data audit, before choosing the final model.
 
-## Phase 0 — data audit and design
+## Phase 0: Data audit and design
 
 - Inspect HDB transaction schemas, date range, duplicates, nulls and anomalous prices; document older dataset changes.
 - Obtain HDB property information and investigate building polygons or OneMap for block matching. Test a sample, calculate match rates and inspect errors; preserve unmatched records and their exclusion reasons.
@@ -12,7 +12,7 @@ Build a reproducible analyst portfolio project that helps buyers compare trade-o
 - Define unit of analysis, target, as-of date, refresh strategy, licensing and reproducibility. Confirm research questions and sketch an app journey.
 - Deliver: source inventory, feasibility and quality report, proposed data dictionary, unresolved decisions.
 
-## Phase 1 — analysis and machine learning
+## Phase 1: Analysis and machine learning
 
 - Clean transaction and block data; create reproducible transforms and geographic features using a suitable projected coordinate system. Label straight-line distances honestly.
 - Investigate price distributions over time, town, flat type, lease, floor area and transport proximity. Avoid interpreting associations as causal effects.
@@ -22,15 +22,15 @@ Build a reproducible analyst portfolio project that helps buyers compare trade-o
 - Investigate uncertainty intervals on held-out data, including observed coverage; do not present an unvalidated range as a calibrated prediction interval. Develop a comparable-sales method and flag insufficient matches.
 - Deliver: reproducible analysis, evaluation and limitations, model artefact and feature definitions; report whether transport improves performance.
 
-## Phase 2 — resale explorer web app
+## Phase 2: Resale explorer web app
 
 - Prototype a Python app (e.g. Streamlit) with area, budget, flat type and lease filters, a map with MRT and bus stops, and recent transactions.
 - Add flat-input price estimation, comparable sales, data-as-of dates, distance methodology, uncertainty and model limitations. Design for small screens and accessible labels.
 - Verify that app inputs use the exact same preprocessing and units as training. Test missing inputs, low-data areas, model loading, map interaction and representative user journeys.
 - Deploy only after checking hosting, source attribution, data refresh, third-party terms, privacy and running costs. No live listings unless an authorised source is separately obtained.
-- Deliver: usable prototype, deployment instructions and portfolio walkthrough.
+- Deliver: usable prototype, deployment instructions and project walkthrough.
 
-## Phase 3 — BTO and future planning
+## Phase 3: BTO and future planning
 
 - Add user-entered BTO price, estimated completion date, optional interim housing and renovation budgets; compare with resale now and resale later on a timeline.
 - Show price, timing and costs separately; do not treat mortgage principal as an expense or call a price difference profit. Do not infer eligibility, grants or approval; link to HDB.
@@ -39,7 +39,7 @@ Build a reproducible analyst portfolio project that helps buyers compare trade-o
 - Ship a modelled forecast only if data, backtests, uncertainty and usability justify it; otherwise retain scenarios only.
 - Deliver: comparison view, explanation of assumptions and forecast evaluation report.
 
-## Phase 4 — refinement and portfolio
+## Phase 4: Refinement and documentation
 
 - Review accuracy and data refresh, improve accessibility, document failures and decisions, and add carefully selected amenities or commute features if reliable data and access permit.
 - Publish a concise case study describing the problem, sources, methodology, findings, measured errors and limitations, plus screenshots/demo.
