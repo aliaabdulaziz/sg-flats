@@ -1,0 +1,27 @@
+split,flat_type,rows
+excluded_incomplete_month,2 ROOM,6
+excluded_incomplete_month,3 ROOM,74
+excluded_incomplete_month,4 ROOM,144
+excluded_incomplete_month,5 ROOM,106
+excluded_incomplete_month,EXECUTIVE,28
+test,1 ROOM,9
+test,2 ROOM,645
+test,3 ROOM,4971
+test,4 ROOM,9523
+test,5 ROOM,5212
+test,EXECUTIVE,1437
+test,MULTI-GENERATION,9
+train,1 ROOM,75
+train,2 ROOM,3664
+train,3 ROOM,46722
+train,4 ROOM,83248
+train,5 ROOM,48728
+train,EXECUTIVE,14465
+train,MULTI-GENERATION,80
+validation,1 ROOM,5
+validation,2 ROOM,832
+validation,3 ROOM,6149
+validation,4 ROOM,10843
+validation,5 ROOM,5781
+validation,EXECUTIVE,1470
+validation,MULTI-GENERATION,4

@@ -1,0 +1,12 @@
+{
+  "snapshot_as_of": "2026-11-05",
+  "splits": {
+    "train": ["2017-01", "2024-12"],
+    "validation": ["2025-01", "2025-12"],
+    "test": ["2026-01", "2026-10"]
+  },
+  "target": "resale_price",
+  "base_features": ["town", "flat_type", "flat_model", "floor_area_sqm", "storey_lower", "storey_upper", "remaining_lease_months", "month_index", "x_svy21", "y_svy21"],
+  "optional_transport_features": ["nearest_mrt_distance_m"],
+  "transport_sensitivity_features": ["nearest_mrt_distance_lag1_m"]
+}

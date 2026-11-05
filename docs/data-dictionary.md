@@ -62,3 +62,7 @@ No transaction ID is supplied. Fully identical records may represent separate tr
 - `mrt_station_proxies.csv` (local): one row per registered MRT service code with a station-area representative point and geometry method. Interchange codes may share a physical-station proxy.
 - `rail-service-register.csv`: source-linked service availability, date type and history scope. A 2017-01-01 left-censored boundary is not an opening date. Announced future dates are separate from verified availability.
 - `monthly-availability-policy.csv`: services opening during a transaction month become available from the next full month for historical features.
+
+## Prepared modelling records
+
+See [modelling dataset and evaluation design](model-dataset.md) for the target, feature definitions, QA fields and split policy, and [feature allowlist](../config/model-data.json) for exact model input names. Generated transaction records remain local; coverage and lineage are in `reports/model-data/`.

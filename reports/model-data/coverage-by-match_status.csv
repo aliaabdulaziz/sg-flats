@@ -1,0 +1,17 @@
+split,match_status,rows
+excluded_incomplete_month,footprint_corroborated,146
+excluded_incomplete_month,onemap_exact_no_polygon,3
+excluded_incomplete_month,onemap_exact_polygon_corroborated,63
+excluded_incomplete_month,street_crosswalk_inferred,146
+test,footprint_corroborated,9621
+test,onemap_exact_no_polygon,12
+test,onemap_exact_polygon_corroborated,3689
+test,street_crosswalk_inferred,8484
+train,footprint_corroborated,96531
+train,onemap_exact_no_polygon,110
+train,onemap_exact_polygon_corroborated,23340
+train,street_crosswalk_inferred,77001
+validation,footprint_corroborated,11241
+validation,onemap_exact_no_polygon,21
+validation,onemap_exact_polygon_corroborated,3652
+validation,street_crosswalk_inferred,10170

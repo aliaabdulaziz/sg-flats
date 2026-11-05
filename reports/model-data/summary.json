@@ -1,0 +1,28 @@
+{
+  "input_sha256": {
+    "data/raw/resale.csv": "c80bd1186945ab5e19fac750dcd4eb9b0da479506846bbc9846543c2f882f8f7",
+    "data/processed/block_coordinates_validated.csv": "eccfe899272349dc06c2e4efdc3c3c04c16f19fd4af233c9f72c68af10f07fcf",
+    "data/processed/mrt_station_proxies.csv": "57da9835015496fde7489ebed2cd20097fffba9c1c164b5dcb2db064c3333ecc",
+    "reports/phase0/transport/monthly-availability-policy.csv": "d9aff63c2bd0a91f212a595830d864497c8d732af128f9d09f8b502618072540",
+    "config/model-data.json": "b16f748046841de945a16e814bca7ffc0b4b4b404ea8d0c6ce1915c1d1a7d7ac"
+  },
+  "source_rows": 244230,
+  "split_rows": {
+    "excluded_incomplete_month": 358,
+    "test": 21806,
+    "train": 196982,
+    "validation": 25084
+  },
+  "extra_identical_source_rows_retained": 318,
+  "rows_in_repeated_groups": 635,
+  "unseen_address_rows_by_split": {
+    "excluded_incomplete_month": 30,
+    "test": 1506,
+    "train": 0,
+    "validation": 825
+  },
+  "quality_gates": "passed: complete joins, valid parsing, finite features, positive target/area/lease, unique record IDs, chronological disjoint splits, complete station joins, active-service-only distance calculations",
+  "test_policy": "Counts and coverage only; no fitting, test targets summarised, or test scores computed.",
+  "models_trained": 0,
+  "output_sha256": "78f6e47b0c52a9c5727af21a55ee2267ccd842002b14d11f0e7729ccc35ea163"
+}

@@ -1,0 +1,105 @@
+split,town,rows
+excluded_incomplete_month,ANG MO KIO,8
+excluded_incomplete_month,BEDOK,22
+excluded_incomplete_month,BISHAN,7
+excluded_incomplete_month,BUKIT BATOK,15
+excluded_incomplete_month,BUKIT MERAH,18
+excluded_incomplete_month,BUKIT PANJANG,13
+excluded_incomplete_month,BUKIT TIMAH,2
+excluded_incomplete_month,CENTRAL AREA,3
+excluded_incomplete_month,CHOA CHU KANG,13
+excluded_incomplete_month,CLEMENTI,6
+excluded_incomplete_month,GEYLANG,9
+excluded_incomplete_month,HOUGANG,23
+excluded_incomplete_month,JURONG EAST,9
+excluded_incomplete_month,JURONG WEST,29
+excluded_incomplete_month,KALLANG/WHAMPOA,10
+excluded_incomplete_month,MARINE PARADE,4
+excluded_incomplete_month,PASIR RIS,8
+excluded_incomplete_month,PUNGGOL,19
+excluded_incomplete_month,QUEENSTOWN,11
+excluded_incomplete_month,SEMBAWANG,13
+excluded_incomplete_month,SENGKANG,22
+excluded_incomplete_month,SERANGOON,8
+excluded_incomplete_month,TAMPINES,30
+excluded_incomplete_month,TOA PAYOH,17
+excluded_incomplete_month,WOODLANDS,22
+excluded_incomplete_month,YISHUN,17
+test,ANG MO KIO,758
+test,BEDOK,1173
+test,BISHAN,378
+test,BUKIT BATOK,1221
+test,BUKIT MERAH,808
+test,BUKIT PANJANG,685
+test,BUKIT TIMAH,50
+test,CENTRAL AREA,159
+test,CHOA CHU KANG,901
+test,CLEMENTI,434
+test,GEYLANG,558
+test,HOUGANG,1087
+test,JURONG EAST,424
+test,JURONG WEST,1297
+test,KALLANG/WHAMPOA,664
+test,MARINE PARADE,111
+test,PASIR RIS,659
+test,PUNGGOL,1477
+test,QUEENSTOWN,701
+test,SEMBAWANG,733
+test,SENGKANG,1530
+test,SERANGOON,333
+test,TAMPINES,1822
+test,TOA PAYOH,871
+test,WOODLANDS,1601
+test,YISHUN,1371
+train,ANG MO KIO,8093
+train,BEDOK,10353
+train,BISHAN,3513
+train,BUKIT BATOK,7917
+train,BUKIT MERAH,7538
+train,BUKIT PANJANG,7161
+train,BUKIT TIMAH,488
+train,CENTRAL AREA,1564
+train,CHOA CHU KANG,8997
+train,CLEMENTI,4387
+train,GEYLANG,4851
+train,HOUGANG,9909
+train,JURONG EAST,4031
+train,JURONG WEST,13061
+train,KALLANG/WHAMPOA,6000
+train,MARINE PARADE,1205
+train,PASIR RIS,5760
+train,PUNGGOL,14619
+train,QUEENSTOWN,5402
+train,SEMBAWANG,5527
+train,SENGKANG,16250
+train,SERANGOON,3552
+train,TAMPINES,13228
+train,TOA PAYOH,6145
+train,WOODLANDS,13999
+train,YISHUN,13432
+validation,ANG MO KIO,971
+validation,BEDOK,1207
+validation,BISHAN,376
+validation,BUKIT BATOK,1304
+validation,BUKIT MERAH,933
+validation,BUKIT PANJANG,798
+validation,BUKIT TIMAH,54
+validation,CENTRAL AREA,172
+validation,CHOA CHU KANG,1027
+validation,CLEMENTI,551
+validation,GEYLANG,639
+validation,HOUGANG,1313
+validation,JURONG EAST,482
+validation,JURONG WEST,1591
+validation,KALLANG/WHAMPOA,794
+validation,MARINE PARADE,162
+validation,PASIR RIS,634
+validation,PUNGGOL,1538
+validation,QUEENSTOWN,605
+validation,SEMBAWANG,1191
+validation,SENGKANG,1905
+validation,SERANGOON,402
+validation,TAMPINES,1921
+validation,TOA PAYOH,1063
+validation,WOODLANDS,1748
+validation,YISHUN,1703
