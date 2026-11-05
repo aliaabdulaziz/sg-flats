@@ -13,7 +13,9 @@ Given a budget, transport preferences, and purchase timeline, which HDB neighbou
 1. Explore historical resale transactions by budget, flat type, remaining lease and location, with nearby MRT stations and bus stops.
 2. Enter the characteristics and asking price of a specific flat; view an indicative price range and transparent comparable transactions.
 3. Compare user-entered BTO assumptions with buying resale sooner or later, including optional interim housing and renovation costs.
-4. Explore future prices using adjustable scenarios; add a statistical forecast only if it outperforms simple baselines in historical testing.
+4. Combine two independent location filters: an approximate family proximity radius and a search near a workplace or another place. Explore a public-transport commute-time option after checking routing feasibility.
+5. Explore a grant guide based on household circumstances, with links to official guidance and an optional user-entered grant amount.
+6. Explore future prices using adjustable scenarios; add a statistical forecast only if it outperforms simple baselines in historical testing.
 
 The app would not establish a flat's official valuation, eligibility, available loan, cash-over-valuation, or whether it is currently for sale. HDB transactions are registered sales, not live listings. Historical transport context needs particular care.
 
