@@ -1,5 +1,7 @@
 # Modelling dataset and evaluation design
 
+**Current status:** preparation is a provisional candidate schema. Training is paused pending the [broader amenity audit](amenity-audit.md) and [buyer-needs review](buyer-needs.md). Existing row counts/splits stay fixed; no unaudited amenities have been added. `config/project-status.json` records this status for readers, not as a runtime enforcement mechanism.
+
 The modelling preparation has run successfully on the 5 November 2026 snapshot. No price model has been trained. All 244,230 transactions retain their coordinate assignment and confidence tier.
 
 ## Unit, target and time splits
@@ -56,9 +58,9 @@ The builder stops on duplicate coordinate keys, incomplete joins, malformed leas
 
 ## Next modelling gates
 
-1. Explore training-period distributions, category support and time trends; record transformations before comparing models.
+1. First complete the amenity audit restart gate: source/profile evidence, historical-use decisions (including explicit exclusions), broader EDA and reviewed feature list. Then explore training-period distributions, category support and time trends; record transformations before comparing models.
 2. Implement a past-only recent local median baseline, regularised regression and a tree model with training-only preprocessing.
-3. Compare base and transport versions on identical validation windows, including the additional service lag and coordinate-confidence sensitivity.
+3. Compare base, eligible amenity-group additions and transport versions on identical validation windows, including the additional service lag and coordinate-confidence sensitivity.
 4. Set practical error and coverage acceptance criteria from the baseline and intended app use before opening final test scores. Evaluate intervals separately; a point model is not a calibrated uncertainty model.
 5. Freeze choices, evaluate once on final test, publish subgroup errors and limitations, then decide whether estimates are suitable for a prototype.
 

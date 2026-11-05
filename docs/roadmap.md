@@ -2,9 +2,15 @@
 
 ## Objective and success criteria
 
-Build a reproducible project that helps buyers compare housing trade-offs. Deliver a documented dataset, interpretable findings, a tested current-price model, and an interactive prototype. Success means a reader can reproduce the analysis, understand how the model was evaluated, inspect comparables, and see the limits of the result. Define numerical quality thresholds after the first data audit, before choosing the final model.
+Build a reproducible project that helps buyers compare price, space, lease, amenities, schools, family proximity and workplace accessibility. Answer three distinct questions: what might it cost, would the location suit the household, and what trade-offs does the shortlist involve. Deliver a documented dataset, interpretable findings, a tested current-price model, and an interactive prototype. Success means a reader can reproduce the analysis, understand how the model was evaluated, inspect comparables, and see the limits of the result. Define numerical quality thresholds after the first data audit, before choosing the final model.
 
 ## Phase 0: Data audit and design
+
+**Current focus:** the [broader amenity audit](amenity-audit.md), informed by [buyer needs](buyer-needs.md). Model training is paused pending the feature-scope review. Prioritise schools, food/grocery access and parks; childcare/healthcare follow. Official metadata has been reviewed for several sources, but no new amenity dataset has been fully profiled or joined. The supermarket source is blocked pending replacement.
+
+- Resolve source access, terms, full-file quality, coordinates and historical validity for each priority group. Record separate current-explorer and historical-model decisions in the feature audit register.
+- Reuse validated block coordinates for geographic enrichment. Current amenities must not be retrospectively assigned to old sales without evidence.
+- Deliver the acquisition/profile evidence, temporal-use decisions, broader EDA follow-up and reviewed feature list before restarting training. Explicit exclusions with reasons are valid outcomes.
 
 Initial audit results are in [phase0-audit.md](phase0-audit.md). Downloads, profiling and [coordinate validation](coordinate-validation.md) have been run. [Historical transport decisions](transport-history.md) support dated MRT service availability with conditional location proxies; historical exit/bus/LRT/routing features remain excluded. The [modelling dataset and chronological splits](model-dataset.md) are prepared. Authenticated routing performance and model acceptance criteria remain open.
 
@@ -16,15 +22,15 @@ Initial audit results are in [phase0-audit.md](phase0-audit.md). Downloads, prof
 
 ## Phase 1: Analysis and machine learning
 
-[Training-only exploratory analysis](eda-findings.md) is complete for the current snapshot. Executable analysis is in `analysis/`; aggregate tables and charts are in `reports/eda/`. Station age and station-opening effects remain untested. Baseline development and model validation are next.
+[Training-only exploratory analysis](eda-findings.md) is complete for the current snapshot. Executable analysis is in `analysis/`; aggregate tables and charts are in `reports/eda/`. Station age and station-opening effects remain untested. Its original scope is partial: price, flat characteristics and MRT proxies. Extend gross-price, unusual-record, recent-trend, local-support and eligible amenity analysis before baseline development.
 
 - Clean transaction and block data; create reproducible transforms and geographic features using a suitable projected coordinate system. Label straight-line distances honestly.
-- Investigate price distributions over time, town, flat type, lease, floor area and transport proximity. Avoid interpreting associations as causal effects.
+- Investigate gross-price and S$/m² distributions over time, town, flat type, lease, floor area, storey and eligible school/food/grocery/park/transport features. Avoid interpreting associations as causal effects.
 - Split by transaction time. Compare a simple recent local median baseline, a regularised regression baseline and a tree-based model. Fit preprocessing only on training data.
 - Report MAE in S$, median absolute error and error by town, flat type, price band and time; report sample counts. Reserve the latest period as final test, using earlier rolling time windows for model selection.
-- Compare models with and without transport features on the same holdout. Use historical infrastructure only where dates can be substantiated; otherwise restrict those features or omit them for historical model training.
+- Compare base flat/location/time models, eligible amenity additions and transport additions on identical development records; use leave-one-feature-group-out checks where appropriate. Do not attribute all location differences to MRT. Use historical infrastructure only where dates can be substantiated; otherwise restrict those features or omit them for historical model training.
 - Investigate uncertainty intervals on held-out data, including observed coverage; do not present an unvalidated range as a calibrated prediction interval. Develop a comparable-sales method and flag insufficient matches.
-- Deliver: reproducible analysis, evaluation and limitations, model artefact and feature definitions; report whether transport improves performance.
+- Deliver: reproducible analysis, evaluation and limitations, model artefact and feature definitions; report the incremental value and limitations of each eligible feature group.
 
 ## Phase 2: Resale explorer web app
 
@@ -38,6 +44,13 @@ Initial audit results are in [phase0-audit.md](phase0-audit.md). Downloads, prof
 - Provide a paginated transaction table with the same active filters. Hover details can show transaction month, block/street, flat type, area, reported floor range, lease and recorded price; no exact unit, current availability or unobserved condition should be inferred. Review source terms before enabling filtered downloads.
 - Keep filters consistent across charts and table, show active filters, reset controls, units and sample counts, and handle empty/small selections explicitly. Use clear chart labels and an accessible table alternative.
 - Keep research and public reporting separate: development EDA stays training-only. A later public historical explorer can display the approved full dataset after final model evaluation is frozen; it must not become a route for tuning against the final test period. Historical summaries remain distinct from predictions and live listings.
+
+### Neighbourhood suitability and comparisons (planned)
+
+- Add separate current-context layers for named schools, food/grocery access and parks after audit. Childcare/healthcare are later candidates. Show coverage, dates, distance method and missing information.
+- Compare shortlisted blocks by price/comparables, floor area, lease, amenity access and household-selected destinations. Keep personal suitability separate from model price and avoid a universal neighbourhood score.
+- Use a viewing checklist for condition, renovation, actual layout, sun, ventilation, noise and privacy. These cannot be inferred reliably from transaction/block fields.
+- Keep school discovery distinct from school quality/admissions and approximate family distance distinct from PHG eligibility.
 
 ### Other app capabilities
 
@@ -63,38 +76,32 @@ Initial audit results are in [phase0-audit.md](phase0-audit.md). Downloads, prof
 
 ## Phase 4: Refinement and documentation
 
-- Review accuracy and data refresh, improve accessibility, document failures and decisions, and add carefully selected amenities and improve commute features if reliable data and access permit.
+- Review accuracy and data refresh, improve accessibility, document failures and decisions, refine adopted amenity layers and improve commute features if reliable data and access permit.
 - Publish a concise case study describing the problem, sources, methodology, findings, measured errors and limitations, plus screenshots/demo.
 
-## Proposed repository structure
+## Repository structure and planned implementation
 
-This is a target structure; folders should be created as implementation begins, not mistaken for completed code.
+Current structure:
 
 ```text
 sg-flats/
 ├── README.md
-├── docs/
-│   ├── roadmap.md
-│   ├── data-sources.md
-│   ├── data-dictionary.md       # planned
-│   └── model-report.md          # planned
+├── docs/                        # buyer needs, audits, EDA, dataset design, roadmap
+├── config/                      # provisional model inputs/splits and project status
 ├── data/
+│   ├── reference/               # sourced rail register and broader feature audit
 │   ├── raw/                     # local, ignored; source snapshots
 │   ├── interim/                 # local, ignored
 │   └── processed/               # local, ignored
-├── notebooks/                   # exploratory analysis
-├── src/hdb_explorer/
-│   ├── data/                    # acquisition and cleaning
-│   ├── features/                # geographic and other features
-│   ├── modeling/                # training, evaluation, inference
-│   └── comparables/             # comparable-sale selection
-├── app/                         # planned Streamlit interface
-├── models/                      # generated artefacts, normally ignored
-├── tests/                       # meaningful data and prediction checks
-├── reports/                     # figures and findings
-├── pyproject.toml               # dependencies and project configuration
+├── scripts/                     # acquisition, audits and dataset preparation
+├── analysis/                    # executable training-only EDA
+├── reports/                     # audit evidence, dataset coverage, EDA tables/figures
+├── tests/                       # held-out leakage guard; later model checks
+├── requirements-audit.txt       # pinned existing pipeline dependencies
 ├── .env.example                 # names only; never secrets
 └── .gitignore
 ```
 
-Data snapshots, derived datasets and model files should only be shared after checking applicable terms and size limits. Keep API keys out of git. The final implementation can simplify this structure as appropriate.
+Later implementation may add `src/hdb_explorer/` modules for data, features, modelling and comparable selection; `app/` for the explorer; local ignored `models/`; a model report and project packaging. These do not exist yet. Keep current amenity context, historical price features and personal preference inputs distinct in implementation.
+
+Data snapshots, derived datasets and model files should only be shared after checking applicable terms and size limits. Keep API keys out of git. Add amenity source manifests and profile evidence as acquisition begins; preserve existing snapshot reports.

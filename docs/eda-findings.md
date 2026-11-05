@@ -1,5 +1,7 @@
 # Training-period exploratory findings
 
+**Scope update, 6 November 2026:** this is the first, partial EDA using transaction attributes and MRT proxies. It does not evaluate schools, food/grocery access, parks or the full buyer decision. Read [buyer needs and broader hypotheses](buyer-needs.md) and [amenity audit](amenity-audit.md). Model training is paused pending that review. Existing computed results remain unchanged.
+
 This analysis uses **196,982 registered transactions from January 2017 to December 2024**, covering 9,610 block/street addresses. All price exploration is restricted to training. Validation and final-test prices are not analysed. These are exploratory associations, not causal findings, statistical forecasts or validated model performance.
 
 Reproduce with `python analysis/run_training_eda.py` after preparing the modelling dataset. Tables and provenance are in [reports/eda](../reports/eda); the script uses existing audit dependencies and generates standalone SVG charts without another plotting library.
@@ -91,9 +93,10 @@ An absent or weak observed station-age relationship would not prove no relations
 
 ## Decisions before modelling
 
-- Proceed with training-only baseline development using the existing base feature allowlist and a separate MRT ablation.
+- Complete the broader amenity audit and focused training-only EDA follow-up before baseline development. The existing base/MRT allowlist is provisional, not the final feature set.
 - Freeze the final-test period. Do not use EDA or final-test errors to tune feature thresholds or select favourable subgroups.
 - Fit preprocessing and comparable references inside each training window. Compare against a recent, past-only local median baseline before claiming ML value.
+- Evaluate school, food/grocery and park features where historical evidence permits. Use identical development samples to assess amenity groups and MRT contributions; omitted neighbourhood amenities may explain part of the MRT association.
 - Keep station age, historical bus/exit features and future forecasts outside the first model until their evidence is sufficient. Station-age research can be a separate feature extension; the current result does not dismiss it.
 - Choose practical model acceptance criteria after measuring the baseline on development windows and before final-test evaluation. Report subgroup support, absolute dollar errors and uncertainty calibration separately.
 

@@ -1,0 +1,11 @@
+feature_group,evidence_status,current_explorer,historical_model,source,candidate_measurements,limitations
+flat_attributes,existing_dataset_audited,candidate,candidate,HDB resale,gross_price_area_lease_storey_type_model,Historical baseline attributes; full EDA follow-up pending
+mrt_access,existing_conditional_proxy,candidate,conditional,data/reference/rail-service-register.csv,nearest_mrt_distance_m,Availability dates supported; geometry stability assumption; no causal premium
+school_access,official_metadata_reviewed,pending_full_audit,not_approved,https://data.gov.sg/datasets/d_688b934f82c1059ed0a6993d2a829089/view,named_school_distance_and_campus_count,No school quality or admissions inference; historical relocations unresolved
+food_access,official_metadata_reviewed,pending_full_audit,not_approved,https://developers.data.gov.sg/datasets?resultId=1445&topics=environment,hawker_distance_and_count,Resolve resource ID; full geometry and opening history pending
+grocery_access,official_page_dataset_not_found,blocked_source,not_approved,https://data.gov.sg/datasets/d_cac2c32f01960a3ad7202a99c27268a0/view,supermarket_distance_and_count,Find permitted outlet-level replacement
+green_space,official_metadata_reviewed,pending_full_audit,not_approved,https://data.gov.sg/datasets/d_77d7ec97be83d44f61b85454f844382f/view,park_boundary_distance,Managed area is not entrance or historic availability
+childcare,official_metadata_reviewed,later_pending_audit,not_approved,https://data.gov.sg/datasets/d_696c994c50745b079b3684f0e90ffc53/view,centre_distance,Current presence and vacancy not guaranteed or historical
+healthcare,official_discovery_reference,later_pending_audit,not_approved,https://www.moh.gov.sg/seeking-healthcare/find-a-facility-or-service/types-of-medical-facilities-and-services/find-a-medical-facility/,facility_distance,Reusable feed and terms not audited
+family_workplace,user_preference_design,planned,not_applicable,docs/buyer-needs.md,independent_location_filters,Not personal attributes in transaction price model
+unit_comfort_condition,not_in_transaction_data,viewing_checklist,unavailable,docs/buyer-needs.md,sun_noise_privacy_condition_layout,Do not infer exact-unit conditions from block coordinates

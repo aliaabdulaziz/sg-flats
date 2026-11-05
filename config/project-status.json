@@ -1,0 +1,16 @@
+{
+  "reviewed_on": "2026-11-06",
+  "direction": "buyer_tradeoffs_price_suitability_comparison",
+  "model_training_status": "paused_pending_broader_feature_audit",
+  "status_is_documentation_not_runtime_enforcement": true,
+  "priority_feature_groups": [
+    "school_access",
+    "food_access",
+    "grocery_access",
+    "green_space"
+  ],
+  "gate_document": "docs/amenity-audit.md",
+  "existing_model_data_status": "provisional_candidate_schema_not_final_feature_set",
+  "preserve_chronological_splits": true,
+  "models_trained": 0
+}

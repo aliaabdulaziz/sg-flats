@@ -1,6 +1,6 @@
 # Data source research
 
-Research date: 5 November 2026. The initial source review is now supplemented by a [downloaded-data audit](phase0-audit.md). HDB resale, property and building data and LTA static transport files were downloaded and profiled. [Coordinate matching and sampled OneMap validation](coordinate-validation.md) have now been run; [transport history](transport-history.md) is assessed separately. Full historical network reconstruction and route-time API testing remain unverified. Check current terms before acquisition, redistribution or deployment.
+Initial research date: 5 November 2026; broader source-page review: 6 November 2026. The initial source review is now supplemented by a [downloaded-data audit](phase0-audit.md). HDB resale, property and building data and LTA static transport files were downloaded and profiled. [Coordinate matching and sampled OneMap validation](coordinate-validation.md) have now been run; [transport history](transport-history.md) is assessed separately. Full historical network reconstruction and route-time API testing remain unverified. Check current terms before acquisition, redistribution or deployment.
 
 This is a research inventory, not a list of datasets already used. The proposed core sources below are starting points for the data audit; the remaining sources are optional references or alternatives. We will record which sources are actually adopted after testing coverage, matching and usage terms.
 
@@ -13,7 +13,11 @@ This is a research inventory, not a list of datasets already used. The proposed 
 - LTA station-code workbook and official LTA/MOT opening announcements: used to build the sourced MRT service register.
 - Additional source candidates remain research only unless identified in the audit. Download success does not imply a source is approved for historical model features.
 
-## Proposed core sources
+## Priority amenity sources under audit
+
+Schools, food/grocery access and parks are now priority candidates, not merely optional extras. See [amenity audit](amenity-audit.md) for exact official references, verified metadata, definitions, unresolved access and historical-use decisions. ECDA childcare and MOH healthcare are later discovery candidates. These sources are **not downloaded/adopted model inputs yet**. The previously referenced supermarket dataset returns “Dataset not found”; replacement outlet-level coverage must be established.
+
+## Existing foundation sources
 
 | Source | What it can contribute | Access and limitations |
 |---|---|---|
@@ -33,7 +37,7 @@ These are potential alternatives or later additions; they are not commitments to
 | [HDB Existing Building](https://data.gov.sg/datasets?query=bto&resultId=d_16b157c52ed637edd6ba1232e026258d) | Geographic building polygons, block number and postal code may assist block geolocation. | GeoJSON snapshot; linking via street codes and postal code needs investigation. Current buildings do not guarantee historic coverage. |
 | [HDB resale statistics and index](https://www.hdb.gov.sg/managing-my-home/selling-a-flat/process-for-selling-a-flat/resale-flat-planning/resale-statistics) | Market-level context and long-run quarterly index; official town/type medians. | Market-wide index is not an individual-flat forecast. Sparse town/type quarters need caution. |
 | [HDB BTO launch annexes](https://www.hdb.gov.sg/-/media/hdb-pulse/news/2026/20260617-HDB-Launches-6952-Flats-Across-7-Projects-in-June-2026-BTO-Sales-Exercise/Annex-A.pdf) | Project prices, location, attributes and nearby resale comparisons for a launch. | PDF example; check launch-by-launch structure and reuse. Price ranges are not guaranteed individual unit prices. Start with user-entered assumptions. |
-| [MOE school information](https://developers.data.gov.sg/datasets?agencies=Ministry+of+Education+%28MOE%29&resultId=d_688b934f82c1059ed0a6993d2a829089) | School addresses for a potential later amenities layer. | Geocode and check currency and historical coverage. Distance alone does not establish admissions eligibility. |
+| [MOE school information](https://developers.data.gov.sg/datasets?agencies=Ministry+of+Education+%28MOE%29&resultId=d_688b934f82c1059ed0a6993d2a829089) | Priority school-address candidate; full-file and historical audit pending. | Geocode and check currency and historical coverage. Distance alone does not establish admissions eligibility. |
 | [OpenStreetMap](https://www.openstreetmap.org/copyright) | Potential supplementary map and geographic data. | Check quality and coverage; ODbL attribution and applicable share-alike obligations. Map tiles have separate usage policies. |
 
 | [OneMap routing API](https://www.onemap.gov.sg/apidocs/routing) | Potential walking and public-transport journey estimates to a user-selected destination. | Requires authentication; check quotas, terms, performance and coverage. Test date/time support and clarify estimates are not guarantees. |
@@ -53,7 +57,10 @@ Use real estate sites for market context and descriptions of buyer problems, and
 
 ## Open questions before modelling
 
-- Can addresses be matched to a block coordinate accurately and consistently? Test samples, ambiguous addresses and unmatched rates.
+- Complete the [amenity audit restart gate](amenity-audit.md): what can schools, food/grocery and parks support currently versus historically? Which sources must be excluded or replaced?
+- Distinguish recorded-price predictors, current neighbourhood context and household preferences. No evidence yet establishes an independent MRT premium after broader amenity adjustment.
+
+- Coordinate assignment and sample validation are complete with explicit confidence tiers; preserve those tiers during amenity joins and sensitivity analysis.
 - Are station opening dates and historical bus stops/routes available in a reusable, reliable form? If not, omit or constrain historical features to prevent future information leaking into training.
 - How recent and complete are comparable sales for each area and flat type? Show sample counts and avoid confident estimates in sparse areas.
 - Can a realistic, evaluated interval be produced for individual flat prices? Check coverage on later data, and do not confuse assumptions with confidence.

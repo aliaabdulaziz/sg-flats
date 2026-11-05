@@ -1,5 +1,7 @@
 # Block-coordinate resolution and validation
 
+These coordinates are shared infrastructure for transport, school, food/grocery and park research. The [amenity audit](amenity-audit.md) determines which future joins are suitable; coordinate coverage alone does not validate an amenity feature.
+
 Audit date: 5 November 2026. Read the computed counts in [onemap-summary.json](../reports/phase0/coordinates/onemap-summary.json) alongside this methodology. The output is a block-location research dataset; it does not certify PHG distance or identify an exact flat unit.
 
 ## Results

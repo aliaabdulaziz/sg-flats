@@ -1,5 +1,7 @@
 # Phase 0: Initial data audit
 
+This document preserves the initial snapshot audit. The active Phase 0 extension is the [broader amenity audit](amenity-audit.md); training remains paused pending its feature-scope gate.
+
 Audit date: 5 November 2026 (Singapore time). Status: initial snapshot audit completed. A subsequent [coordinate validation](coordinate-validation.md) assigns all addresses with confidence tiers, and [transport history review](transport-history.md) defines which features are supported. Authenticated route-time testing remains open. The findings below preserve the initial audit stage. No price model or app has been built.
 
 ## Findings

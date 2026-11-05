@@ -1,5 +1,7 @@
 # Transport history: what can be used safely
 
+Transport is one part of the broader [buyer-needs framework](buyer-needs.md). These decisions establish transport feasibility, not a full neighbourhood feature set or an independent MRT price effect; see the [amenity audit](amenity-audit.md).
+
 Reviewed 5 November 2026. The executable audit is `scripts/audit_transport_history.py`; its sourced service-date register is [rail-service-register.csv](../data/reference/rail-service-register.csv). Computed checks are in [transport/summary.json](../reports/phase0/transport/summary.json).
 
 ## Decision

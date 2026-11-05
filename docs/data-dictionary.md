@@ -66,3 +66,7 @@ No transaction ID is supplied. Fully identical records may represent separate tr
 ## Prepared modelling records
 
 See [modelling dataset and evaluation design](model-dataset.md) for the target, feature definitions, QA fields and split policy, and [feature allowlist](../config/model-data.json) for exact model input names. Generated transaction records remain local; coverage and lineage are in `reports/model-data/`.
+
+## Planned broader features (not generated)
+
+The current schema covers transaction attributes and conditional MRT distances; it is provisional. School proximity, food/grocery access and park-boundary distance/count measures are candidates in [amenity-audit.md](amenity-audit.md), with status in [feature-audit-register.csv](../data/reference/feature-audit-register.csv). They are not columns in the current prepared dataset. Preserve source date, validity interval, geometry method and missingness for any future adopted feature. Personal family/workplace inputs and unobserved unit condition are not transaction-model fields.
