@@ -1,0 +1,422 @@
+{
+  "resale": {
+    "rows": 244230,
+    "columns": [
+      "month",
+      "town",
+      "flat_type",
+      "block",
+      "street_name",
+      "storey_range",
+      "floor_area_sqm",
+      "flat_model",
+      "lease_commence_date",
+      "remaining_lease",
+      "resale_price"
+    ],
+    "blank_counts": {
+      "month": 0,
+      "town": 0,
+      "flat_type": 0,
+      "block": 0,
+      "street_name": 0,
+      "storey_range": 0,
+      "floor_area_sqm": 0,
+      "flat_model": 0,
+      "lease_commence_date": 0,
+      "remaining_lease": 0,
+      "resale_price": 0
+    },
+    "repeated_full_rows_after_first": 318,
+    "month_min": "2017-01",
+    "month_max": "2026-11",
+    "invalid_months": 0,
+    "missing_months": [],
+    "town_counts": {
+      "SENGKANG": 19707,
+      "PUNGGOL": 17653,
+      "WOODLANDS": 17370,
+      "TAMPINES": 17001,
+      "YISHUN": 16523,
+      "JURONG WEST": 15978,
+      "BEDOK": 12755,
+      "HOUGANG": 12332,
+      "CHOA CHU KANG": 10938,
+      "BUKIT BATOK": 10457,
+      "ANG MO KIO": 9830,
+      "BUKIT MERAH": 9297,
+      "BUKIT PANJANG": 8657,
+      "TOA PAYOH": 8096,
+      "KALLANG/WHAMPOA": 7468,
+      "SEMBAWANG": 7464,
+      "PASIR RIS": 7061,
+      "QUEENSTOWN": 6719,
+      "GEYLANG": 6057,
+      "CLEMENTI": 5378,
+      "JURONG EAST": 4946,
+      "SERANGOON": 4295,
+      "BISHAN": 4274,
+      "CENTRAL AREA": 1898,
+      "MARINE PARADE": 1482,
+      "BUKIT TIMAH": 594
+    },
+    "flat_type_counts": {
+      "4 ROOM": 103758,
+      "5 ROOM": 59827,
+      "3 ROOM": 57916,
+      "EXECUTIVE": 17400,
+      "2 ROOM": 5147,
+      "MULTI-GENERATION": 93,
+      "1 ROOM": 89
+    },
+    "numeric": {
+      "resale_price": {
+        "unparseable": 0,
+        "non_positive": 0,
+        "min": 140000.0,
+        "median": 505000.0,
+        "max": 1818000.0
+      },
+      "floor_area_sqm": {
+        "unparseable": 0,
+        "non_positive": 0,
+        "min": 31.0,
+        "median": 93.0,
+        "max": 366.7
+      },
+      "lease_commence_date": {
+        "unparseable": 0,
+        "non_positive": 0,
+        "min": 1966.0,
+        "median": 1997.0,
+        "max": 2023.0
+      }
+    },
+    "unparseable_remaining_lease": 0,
+    "remaining_lease_months": {
+      "unparseable": 0,
+      "non_positive": 0,
+      "min": 469.0,
+      "median": 885.0,
+      "max": 1173.0
+    },
+    "unparseable_storey": 0,
+    "reversed_storey_ranges": 0,
+    "lease_start_after_transaction_year": 0
+  },
+  "property": {
+    "rows": 13392,
+    "columns": [
+      "blk_no",
+      "street",
+      "max_floor_lvl",
+      "year_completed",
+      "residential",
+      "commercial",
+      "market_hawker",
+      "miscellaneous",
+      "multistorey_carpark",
+      "precinct_pavilion",
+      "bldg_contract_town",
+      "total_dwelling_units",
+      "1room_sold",
+      "2room_sold",
+      "3room_sold",
+      "4room_sold",
+      "5room_sold",
+      "exec_sold",
+      "multigen_sold",
+      "studio_apartment_sold",
+      "1room_rental",
+      "2room_rental",
+      "3room_rental",
+      "other_room_rental"
+    ],
+    "blank_counts": {
+      "blk_no": 0,
+      "street": 0,
+      "max_floor_lvl": 0,
+      "year_completed": 0,
+      "residential": 0,
+      "commercial": 0,
+      "market_hawker": 0,
+      "miscellaneous": 0,
+      "multistorey_carpark": 0,
+      "precinct_pavilion": 0,
+      "bldg_contract_town": 0,
+      "total_dwelling_units": 0,
+      "1room_sold": 0,
+      "2room_sold": 0,
+      "3room_sold": 0,
+      "4room_sold": 0,
+      "5room_sold": 0,
+      "exec_sold": 0,
+      "multigen_sold": 0,
+      "studio_apartment_sold": 0,
+      "1room_rental": 0,
+      "2room_rental": 0,
+      "3room_rental": 0,
+      "other_room_rental": 0
+    },
+    "repeated_full_rows_after_first": 0,
+    "duplicate_address_keys": 0
+  },
+  "property_join": {
+    "matched_rows": 244227,
+    "total_rows": 244230,
+    "matched_pct": 99.9987716496745,
+    "unique_resale_addresses": 9769,
+    "matched_unique_addresses": 9768
+  },
+  "transport": {
+    "stations": {
+      "features": 234,
+      "geometry": "POLYGON",
+      "fields": [
+        "JOB_NUM",
+        "TYP_CD",
+        "STN_NAM",
+        "EXCEPTION_",
+        "LAST_UPD_U",
+        "LAST_UPD_D",
+        "CRT_USRID_",
+        "CRT_DTTM",
+        "RTS_LVL_NU",
+        "LIN_NAM",
+        "PKG_REF",
+        "REMARKS",
+        "ATTACHEMEN",
+        "SHAPE_AREA",
+        "SHAPE_LEN"
+      ],
+      "bbox_source": [
+        6068.208599999547,
+        27478.43730000034,
+        45377.503899999894,
+        47913.5756000001
+      ],
+      "bbox_corner_wgs84": [
+        [
+          103.63625464645433,
+          1.264772192920858
+        ],
+        [
+          103.98947279685846,
+          1.4495824170315141
+        ]
+      ],
+      "crs_name": "SVY21",
+      "crs_unit": "metre",
+      "LIN_NAM_counts": {
+        "DTL": 39,
+        "CCL": 35,
+        "TEC": 34,
+        "EWL": 28,
+        "NSL": 25,
+        "NEL": 18,
+        "PLRT": 15,
+        "SLRT": 15,
+        "BPLRT": 14,
+        "TWE": 5,
+        "EWNS": 3,
+        "CA": 2,
+        "DTCC": 1
+      },
+      "TYP_CD_counts": {
+        "34": 190,
+        "33": 44
+      },
+      "unique_station_labels": 225,
+      "duplicate_station_label_rows": 9,
+      "labels_needing_station_code_review": [
+        "BD",
+        "BOCC",
+        "BPLD",
+        "CD",
+        "GBD",
+        "HSSCT",
+        "KCD",
+        "MD",
+        "PTC",
+        "SLD",
+        "SMD",
+        "ST",
+        "STC",
+        "TD",
+        "TSCDTFB",
+        "TSFB",
+        "UPD"
+      ]
+    },
+    "station_exits": {
+      "features": 613,
+      "geometry": "POINT",
+      "fields": [
+        "stn_name",
+        "exit_code"
+      ],
+      "bbox_source": [
+        6134.085513729602,
+        27499.69681829959,
+        45356.36201372929,
+        47865.922718301415
+      ],
+      "bbox_corner_wgs84": [
+        [
+          103.63684655411001,
+          1.2649645006006782
+        ],
+        [
+          103.98928278689975,
+          1.4491514764631854
+        ]
+      ],
+      "crs_name": "SVY21",
+      "crs_unit": "metre",
+      "unique_station_names": 188,
+      "duplicate_name_exit_pairs": 9
+    },
+    "bus_stops": {
+      "features": 5205,
+      "geometry": "POINT",
+      "fields": [
+        "JOB_NUM",
+        "BUS_STOP_N",
+        "BUS_ROOF_N",
+        "STATUS",
+        "SERVICE_TY",
+        "LVL_NUM",
+        "RD_CD",
+        "LOC_DESC",
+        "PKG_REF",
+        "EXCEPTION_",
+        "LAST_UPD_U",
+        "LAST_UPD_D",
+        "CRT_USRID_",
+        "CRT_DTTM",
+        "REMARKS"
+      ],
+      "bbox_source": [
+        3953.167500000447,
+        26001.960500000045,
+        49889.35039999988,
+        52992.58440000005
+      ],
+      "bbox_corner_wgs84": [
+        [
+          103.61725153291236,
+          1.251418025401897
+        ],
+        [
+          104.03002012363868,
+          1.4955116671332271
+        ]
+      ],
+      "crs_name": "SVY21",
+      "crs_unit": "metre",
+      "STATUS_counts": {
+        "OP": 5205
+      },
+      "SERVICE_TY_counts": {
+        "BA": 4052,
+        "BO": 647,
+        "0": 418,
+        "BI": 43,
+        "NA": 31,
+        "BT": 9,
+        "NB": 3,
+        "BD": 2
+      },
+      "unique_stop_codes": 5205,
+      "duplicate_stop_code_rows": 0
+    }
+  },
+  "buildings": {
+    "features": 13436,
+    "geometry_counts": {
+      "Polygon": 13426,
+      "MultiPolygon": 10
+    },
+    "property_keys_first_feature": [
+      "OBJECTID",
+      "BLK_NO",
+      "ST_COD",
+      "ENTITYID",
+      "POSTAL_COD",
+      "INC_CRC",
+      "FMEL_UPD_D",
+      "SHAPE.AREA",
+      "SHAPE.LEN"
+    ],
+    "first_feature_properties": {
+      "OBJECTID": 948044,
+      "BLK_NO": "277",
+      "ST_COD": "TOG02Q",
+      "ENTITYID": 8003,
+      "POSTAL_COD": "600277",
+      "INC_CRC": "F1B655758EC024BF",
+      "FMEL_UPD_D": "20130426120325",
+      "SHAPE.AREA": 846.093548745,
+      "SHAPE.LEN": 238.889879115974
+    },
+    "unique_postcodes": 13436,
+    "duplicate_block_street_code_pairs": 0,
+    "unique_street_codes": 660,
+    "invalid_postcodes": 0,
+    "unique_block_number_candidate_pairs_unverified": 1338
+  },
+  "snapshots": {
+    "resale": {
+      "dataset_id": "d_8b84c4ee58e3cfc0ece0d773c8ca6abc",
+      "file": "resale.csv",
+      "bytes": 24160124,
+      "sha256": "c80bd1186945ab5e19fac750dcd4eb9b0da479506846bbc9846543c2f882f8f7",
+      "retrieved_at_utc": "2026-11-05T14:33:58.810667+00:00",
+      "source": "https://data.gov.sg/datasets/d_8b84c4ee58e3cfc0ece0d773c8ca6abc/view"
+    },
+    "property": {
+      "dataset_id": "d_17f5382f26140b1fdae0ba2ef6239d2f",
+      "file": "property.csv",
+      "bytes": 948464,
+      "sha256": "d528ea2d6fc3f57ab4c8199ed15ea5eaac0109fe659e09ef91910dfe417af2eb",
+      "retrieved_at_utc": "2026-11-05T14:34:14.216649+00:00",
+      "source": "https://data.gov.sg/datasets/d_17f5382f26140b1fdae0ba2ef6239d2f/view"
+    },
+    "buildings": {
+      "dataset_id": "d_16b157c52ed637edd6ba1232e026258d",
+      "file": "buildings.geojson",
+      "bytes": 57012074,
+      "sha256": "7c987511548de3a82da403cabca02702031e02ade8703a9e401417883dfeb702",
+      "retrieved_at_utc": "2026-11-05T14:36:12.653912+00:00",
+      "source": "https://data.gov.sg/datasets/d_16b157c52ed637edd6ba1232e026258d/view"
+    },
+    "stations": {
+      "file": "stations.zip",
+      "bytes": 256104,
+      "sha256": "f6d745bfd3f23af5656f58cbc1cd264e8185f61ec38ac786406a9e2958b2b8f4",
+      "source": "https://datamall.lta.gov.sg/content/dam/datamall/datasets/Geospatial/TrainStation_Sep2026.zip",
+      "retrieved_at_utc": "2026-11-05T14:36:27.663874+00:00"
+    },
+    "station_exits": {
+      "file": "station_exits.zip",
+      "bytes": 26122,
+      "sha256": "3f4a2a3ea3908ff4b8642aa4665a14543ab6a1d0901227c170ccc40c44bb53ba",
+      "source": "https://datamall.lta.gov.sg/content/dam/datamall/datasets/Geospatial/TrainStationExit.zip",
+      "retrieved_at_utc": "2026-11-05T14:36:27.664980+00:00"
+    },
+    "bus_stops": {
+      "file": "bus_stops.zip",
+      "bytes": 251797,
+      "sha256": "326a42fd3dd0b4c7c7baec94907732091796c6c06f0c6689408ba0917f59f885",
+      "source": "https://datamall.lta.gov.sg/content/dam/datamall/datasets/Geospatial/BusStopLocation_Sep2026.zip",
+      "retrieved_at_utc": "2026-11-05T14:36:27.666051+00:00"
+    },
+    "road_sections": {
+      "file": "road_sections.zip",
+      "bytes": 3283102,
+      "sha256": "4c6b23aca457c5f8e40bbc5cabfccc3f07185ceee3e6502511bad5f62c2ca7e0",
+      "source": "https://datamall.lta.gov.sg/content/dam/datamall/datasets/Geospatial/RoadSectionLine_Sep2026.zip",
+      "retrieved_at_utc": "2026-11-05T14:38:29.383383+00:00"
+    }
+  }
+}

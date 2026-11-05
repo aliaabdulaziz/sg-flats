@@ -1,8 +1,15 @@
 # Data source research
 
-Research date: 5 November 2026. This is a source review, not a downloaded-data audit: coverage, match rates, schema changes and historical snapshots still need hands-on verification. Check current terms before acquisition, redistribution or deployment.
+Research date: 5 November 2026. The initial source review is now supplemented by a [downloaded-data audit](phase0-audit.md). HDB resale, property and building data and LTA static transport files were downloaded and profiled. Coordinate accuracy, historical transport validity and authenticated API behaviour remain unverified. Check current terms before acquisition, redistribution or deployment.
 
 This is a research inventory, not a list of datasets already used. The proposed core sources below are starting points for the data audit; the remaining sources are optional references or alternatives. We will record which sources are actually adopted after testing coverage, matching and usage terms.
+
+## Audit status
+
+- Downloaded and profiled: HDB 2017-onward resale, Property Information, Existing Building, LTA station polygons, station exits and bus-stop points.
+- Investigated alternative: LTA Road Section Line; no road-name field was present, so it did not solve the building street-code bridge.
+- Access still required: documented OneMap token and LTA account key for authenticated geocoding, routes/services and routing tests.
+- Additional source candidates remain research only unless identified in the audit. Download success does not imply a source is approved for historical model features.
 
 ## Proposed core sources
 

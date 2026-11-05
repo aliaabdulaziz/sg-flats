@@ -1,6 +1,6 @@
 # Singapore HDB Home Explorer
 
-**Status: research and planning. No model, app, or verified data pipeline has been built yet.**
+**Status: Phase 0 in progress. The initial data audit and reproducible download/profile scripts are available; coordinate verification and historical transport coverage remain open. No model or app has been built yet.**
 
 A proposed open-data project to help Singapore home seekers explore the trade-offs between resale prices, transport access, and purchase timing. The eventual app would compare indicative resale estimates and comparable transactions, and support BTO-versus-resale scenarios.
 
@@ -21,6 +21,8 @@ The app would not establish a flat's official valuation, eligibility, available 
 
 ## Project documents
 
+- [Phase 0 audit findings and reproduction steps](docs/phase0-audit.md)
+- [Initial data dictionary](docs/data-dictionary.md)
 - [Roadmap and proposed structure](docs/roadmap.md)
 - [Data source research and feasibility](docs/data-sources.md)
 

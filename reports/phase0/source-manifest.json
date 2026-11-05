@@ -1,0 +1,54 @@
+{
+  "resale": {
+    "dataset_id": "d_8b84c4ee58e3cfc0ece0d773c8ca6abc",
+    "file": "resale.csv",
+    "bytes": 24160124,
+    "sha256": "c80bd1186945ab5e19fac750dcd4eb9b0da479506846bbc9846543c2f882f8f7",
+    "retrieved_at_utc": "2026-11-05T14:33:58.810667+00:00",
+    "source": "https://data.gov.sg/datasets/d_8b84c4ee58e3cfc0ece0d773c8ca6abc/view"
+  },
+  "property": {
+    "dataset_id": "d_17f5382f26140b1fdae0ba2ef6239d2f",
+    "file": "property.csv",
+    "bytes": 948464,
+    "sha256": "d528ea2d6fc3f57ab4c8199ed15ea5eaac0109fe659e09ef91910dfe417af2eb",
+    "retrieved_at_utc": "2026-11-05T14:34:14.216649+00:00",
+    "source": "https://data.gov.sg/datasets/d_17f5382f26140b1fdae0ba2ef6239d2f/view"
+  },
+  "buildings": {
+    "dataset_id": "d_16b157c52ed637edd6ba1232e026258d",
+    "file": "buildings.geojson",
+    "bytes": 57012074,
+    "sha256": "7c987511548de3a82da403cabca02702031e02ade8703a9e401417883dfeb702",
+    "retrieved_at_utc": "2026-11-05T14:36:12.653912+00:00",
+    "source": "https://data.gov.sg/datasets/d_16b157c52ed637edd6ba1232e026258d/view"
+  },
+  "stations": {
+    "file": "stations.zip",
+    "bytes": 256104,
+    "sha256": "f6d745bfd3f23af5656f58cbc1cd264e8185f61ec38ac786406a9e2958b2b8f4",
+    "source": "https://datamall.lta.gov.sg/content/dam/datamall/datasets/Geospatial/TrainStation_Sep2026.zip",
+    "retrieved_at_utc": "2026-11-05T14:36:27.663874+00:00"
+  },
+  "station_exits": {
+    "file": "station_exits.zip",
+    "bytes": 26122,
+    "sha256": "3f4a2a3ea3908ff4b8642aa4665a14543ab6a1d0901227c170ccc40c44bb53ba",
+    "source": "https://datamall.lta.gov.sg/content/dam/datamall/datasets/Geospatial/TrainStationExit.zip",
+    "retrieved_at_utc": "2026-11-05T14:36:27.664980+00:00"
+  },
+  "bus_stops": {
+    "file": "bus_stops.zip",
+    "bytes": 251797,
+    "sha256": "326a42fd3dd0b4c7c7baec94907732091796c6c06f0c6689408ba0917f59f885",
+    "source": "https://datamall.lta.gov.sg/content/dam/datamall/datasets/Geospatial/BusStopLocation_Sep2026.zip",
+    "retrieved_at_utc": "2026-11-05T14:36:27.666051+00:00"
+  },
+  "road_sections": {
+    "file": "road_sections.zip",
+    "bytes": 3283102,
+    "sha256": "4c6b23aca457c5f8e40bbc5cabfccc3f07185ceee3e6502511bad5f62c2ca7e0",
+    "source": "https://datamall.lta.gov.sg/content/dam/datamall/datasets/Geospatial/RoadSectionLine_Sep2026.zip",
+    "retrieved_at_utc": "2026-11-05T14:38:29.383383+00:00"
+  }
+}
