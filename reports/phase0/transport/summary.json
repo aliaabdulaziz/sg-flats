@@ -1,0 +1,45 @@
+{
+  "station_code_rows": 213,
+  "registry_rows": 223,
+  "approved_mrt_service_code_rows": 174,
+  "approved_codes_missing_exact_polygon_label": [
+    "NE1",
+    "TE11",
+    "TE14",
+    "TE17",
+    "TE20",
+    "TE9"
+  ],
+  "remaining_codes_without_station_proxy": [],
+  "invalid_station_geometries_excluded": 0,
+  "station_proxy_rows": 174,
+  "physical_station_names": 146,
+  "geometry_classification": {
+    "MRT_service_availability_from_2017": 177,
+    "not_approved": 44,
+    "unclassified": 16,
+    "LRT_event_only_network_incomplete": 1
+  },
+  "boundary_regression_cases_passed": 10,
+  "historical_decision": {
+    "mrt_service_dates": "supported for registered service-code set from 2017; opening month is excluded conservatively",
+    "mrt_distance_features": "conditional: service dates and physical-station proxies resolved for registered MRT set; current footprint stability must be an explicit modelling assumption, not an exit-distance claim",
+    "lrt": "not approved as a complete historical network; Teck Lee event documented separately",
+    "station_exit_distance": "current snapshot only; exit-specific opening history not established",
+    "bus_stop_or_route_features": "current snapshot only; historical additions, removals and relocations not established",
+    "current_routing": "current planning only, not historical commute reconstruction"
+  },
+  "sources": {
+    "legacy": "https://www.lta.gov.sg/content/dam/ltagov/who_we_are/statistics_and_publications/statistics/pdf/Rail_Length_2024.pdf",
+    "dtl": "https://www.lta.gov.sg/content/ltagov/en/getting_around/public_transport/rail_network/downtown_line.html",
+    "tel": "https://www.lta.gov.sg/content/ltagov/en/upcoming_projects/rail_expansion/thomson_east_coast_line.html",
+    "canberra": "https://www.lta.gov.sg/content/dam/ltagov/who_we_are/statistics_and_publications/report/pdf/LTA_AR1920.pdf",
+    "tuas": "https://www.mot.gov.sg/news-resources/newsroom/speech-by-second-minister-ng-chee-meng-at-tuas-west-extension-opening-ceremony/",
+    "punggol": "https://www.lta.gov.sg/content/ltagov/en/newsroom/2024/12/news-releases/punggol_coast_station_welcomes_commuters.html",
+    "hume": "https://www.lta.gov.sg/content/ltagov/en/newsroom/2025/1/news-releases/hume_station_to_open.html",
+    "ccl6": "https://www.lta.gov.sg/content/ltagov/en/upcoming_projects/rail_expansion/circle_line_6.html",
+    "future": "https://www.lta.gov.sg/content/ltagov/en/newsroom/2026/11/news-releases/tel5-dtl3e-passenger-service-26-dec-2026.html",
+    "tecklee": "https://www.lta.gov.sg/content/ltagov/en/newsroom/2024/7/news-releases/Teck_Lee_LRT_station_to_start_operations.html",
+    "closure": "https://www.lta.gov.sg/content/dam/ltagov/news/press/2018/20181212_BPLRT_train_timings_AnnexA.pdf"
+  }
+}

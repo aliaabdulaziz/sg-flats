@@ -55,3 +55,10 @@ No transaction ID is supplied. Fully identical records may represent separate tr
 - `storey_lower`, `storey_upper`: parsed bounds from `storey_range`.
 - `price_per_sqm`: price divided by area for analysis only; cannot be an input to a model predicting that same price.
 - Future distance/commute fields: not yet generated; require verified block coordinates and an explicit infrastructure date and route assumption.
+
+## Generated coordinate and historical transport outputs
+
+- `block_coordinates_validated.csv` (local): one row per transaction address, preserving `address_key`, transaction count, town, postcode, coordinates and `match_status`. Confidence tiers distinguish `footprint_corroborated`, `street_crosswalk_inferred`, `onemap_exact_polygon_corroborated` and `onemap_exact_no_polygon`; official evidence additionally records `coordinate_basis` for disambiguation.
+- `mrt_station_proxies.csv` (local): one row per registered MRT service code with a station-area representative point and geometry method. Interchange codes may share a physical-station proxy.
+- `rail-service-register.csv`: source-linked service availability, date type and history scope. A 2017-01-01 left-censored boundary is not an opening date. Announced future dates are separate from verified availability.
+- `monthly-availability-policy.csv`: services opening during a transaction month become available from the next full month for historical features.

@@ -1,0 +1,52 @@
+{
+  "method": "NUS labelled footprint corroboration plus conservative street-code inference",
+  "minimum_iou": 0.5,
+  "minimum_crosswalk_anchor_blocks": 3,
+  "official_valid_polygons": 13432,
+  "official_invalid_polygons": 4,
+  "nus_objects": 10966,
+  "rejected_nus_objects": {
+    "no_unique_overlap_match": 4338
+  },
+  "conflicting_address_keys": 0,
+  "conflicting_official_objects": 0,
+  "candidate_seed_addresses": 6628,
+  "quarantined_street_codes": 1,
+  "accepted_seed_addresses": 6620,
+  "street_codes_with_crosswalk": 467,
+  "address_counts": {
+    "footprint_corroborated": 5186,
+    "street_crosswalk_inferred": 4018,
+    "unresolved": 565
+  },
+  "transaction_counts": {
+    "footprint_corroborated": 127491,
+    "street_crosswalk_inferred": 102961,
+    "unresolved": 13778
+  },
+  "address_coverage_pct": 94.21639881257038,
+  "transaction_coverage_pct": 94.35859640502805,
+  "holdout": {
+    "addresses": 1332,
+    "covered": 1263,
+    "correct_street_names": 1262
+  },
+  "iou_quantiles": {
+    "0.0": 0.5000197187796284,
+    "0.1": 0.5223927312167733,
+    "0.5": 0.6271342770569515,
+    "0.9": 0.8221210437636554,
+    "1.0": 0.981700309643213
+  },
+  "source": {
+    "nus_url": "https://raw.githubusercontent.com/ualsg/hdb3d-data/4a87d9c2811ea43969d9788a5cb4c9a55a977ad9/hdb.json",
+    "nus_sha256": "1ef0d3b26a36fce12d57e294d4fbb584d8400a29ac682d54adfa649810e8f56b",
+    "official_sha256": "7c987511548de3a82da403cabca02702031e02ade8703a9e401417883dfeb702"
+  },
+  "limitations": [
+    "Not independent survey ground truth; NUS has known geocoding errors and shares HDB lineage.",
+    "Crosswalk-inferred matches are lower assurance than direct footprint corroboration.",
+    "Current geometry is not proof of historical building/address continuity.",
+    "Missing and conflicting addresses are not assigned approximate coordinates."
+  ]
+}

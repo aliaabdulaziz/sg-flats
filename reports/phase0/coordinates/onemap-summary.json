@@ -1,0 +1,50 @@
+{
+  "queried_addresses": 1238,
+  "validation_sample_addresses": 156,
+  "validation_exact_results": 156,
+  "validation_postcode_agreements": 156,
+  "validation_previous_distance_m": {
+    "count": 156.0,
+    "mean": 12.460454717893754,
+    "std": 12.709895367514065,
+    "min": 0.015549021309901977,
+    "25%": 2.2627070895156955,
+    "50%": 7.780694470488283,
+    "75%": 18.6496637607969,
+    "max": 53.65673735052173
+  },
+  "validation_coordinate_basis_counts": {
+    "onemap_point": 156
+  },
+  "onemap_result_statuses": {
+    "exact": 1237,
+    "unresolved": 1
+  },
+  "accepted_coordinate_basis_counts": {
+    "onemap_point": 1228,
+    "onemap_point_hdb_polygon_disambiguated": 5,
+    "exact_address_spatial_hdb_polygon_postcode": 3,
+    "official_polygon_for_unique_postcode": 1
+  },
+  "final_address_statuses": {
+    "footprint_corroborated": 4788,
+    "street_crosswalk_inferred": 3744,
+    "onemap_exact_polygon_corroborated": 1233,
+    "onemap_exact_no_polygon": 4
+  },
+  "street_code_anchors_requested": 525,
+  "street_codes_with_postcode_disagreement": [],
+  "street_codes_with_exact_checked_addresses": 524,
+  "final_transaction_statuses": {
+    "footprint_corroborated": 117539,
+    "onemap_exact_no_polygon": 146,
+    "onemap_exact_polygon_corroborated": 30744,
+    "street_crosswalk_inferred": 95801
+  },
+  "remaining_review_addresses": 0,
+  "notes": [
+    "Stratified validation is an address sample, not a guarantee for every unqueried block.",
+    "Point-to-polygon distances above 100m require review; threshold is a project rule, not an official accuracy specification.",
+    "Official geocodes are current address results; they do not establish historical continuity."
+  ]
+}

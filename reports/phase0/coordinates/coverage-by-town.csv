@@ -1,0 +1,83 @@
+town,match_status,addresses,transactions
+ANG MO KIO,footprint_corroborated,265,6749
+ANG MO KIO,onemap_exact_polygon_corroborated,41,1546
+ANG MO KIO,street_crosswalk_inferred,57,1535
+BEDOK,footprint_corroborated,222,5272
+BEDOK,onemap_exact_polygon_corroborated,51,1200
+BEDOK,street_crosswalk_inferred,240,6283
+BISHAN,footprint_corroborated,111,1771
+BISHAN,onemap_exact_polygon_corroborated,18,352
+BISHAN,street_crosswalk_inferred,99,2151
+BUKIT BATOK,footprint_corroborated,201,4599
+BUKIT BATOK,onemap_exact_polygon_corroborated,79,2176
+BUKIT BATOK,street_crosswalk_inferred,139,3682
+BUKIT MERAH,footprint_corroborated,164,4107
+BUKIT MERAH,onemap_exact_polygon_corroborated,52,1340
+BUKIT MERAH,street_crosswalk_inferred,144,3850
+BUKIT PANJANG,footprint_corroborated,190,5022
+BUKIT PANJANG,onemap_exact_no_polygon,1,60
+BUKIT PANJANG,onemap_exact_polygon_corroborated,20,450
+BUKIT PANJANG,street_crosswalk_inferred,124,3125
+BUKIT TIMAH,footprint_corroborated,4,64
+BUKIT TIMAH,onemap_exact_polygon_corroborated,14,320
+BUKIT TIMAH,street_crosswalk_inferred,8,210
+CENTRAL AREA,footprint_corroborated,15,777
+CENTRAL AREA,onemap_exact_polygon_corroborated,45,1032
+CENTRAL AREA,street_crosswalk_inferred,4,89
+CHOA CHU KANG,footprint_corroborated,275,5777
+CHOA CHU KANG,onemap_exact_polygon_corroborated,36,906
+CHOA CHU KANG,street_crosswalk_inferred,207,4255
+CLEMENTI,footprint_corroborated,84,2500
+CLEMENTI,onemap_exact_polygon_corroborated,43,990
+CLEMENTI,street_crosswalk_inferred,59,1888
+GEYLANG,footprint_corroborated,164,3898
+GEYLANG,onemap_exact_polygon_corroborated,45,1005
+GEYLANG,street_crosswalk_inferred,44,1154
+HOUGANG,footprint_corroborated,269,4997
+HOUGANG,onemap_exact_no_polygon,1,6
+HOUGANG,onemap_exact_polygon_corroborated,44,1352
+HOUGANG,street_crosswalk_inferred,266,5977
+JURONG EAST,footprint_corroborated,143,2722
+JURONG EAST,onemap_exact_polygon_corroborated,15,493
+JURONG EAST,street_crosswalk_inferred,66,1731
+JURONG WEST,footprint_corroborated,399,8434
+JURONG WEST,onemap_exact_polygon_corroborated,52,1058
+JURONG WEST,street_crosswalk_inferred,264,6486
+KALLANG/WHAMPOA,footprint_corroborated,95,2859
+KALLANG/WHAMPOA,onemap_exact_polygon_corroborated,92,2145
+KALLANG/WHAMPOA,street_crosswalk_inferred,86,2464
+MARINE PARADE,footprint_corroborated,17,498
+MARINE PARADE,onemap_exact_polygon_corroborated,9,205
+MARINE PARADE,street_crosswalk_inferred,28,779
+PASIR RIS,footprint_corroborated,112,1515
+PASIR RIS,onemap_exact_polygon_corroborated,48,870
+PASIR RIS,street_crosswalk_inferred,268,4676
+PUNGGOL,footprint_corroborated,319,11990
+PUNGGOL,onemap_exact_polygon_corroborated,52,1149
+PUNGGOL,street_crosswalk_inferred,127,4514
+QUEENSTOWN,footprint_corroborated,76,2765
+QUEENSTOWN,onemap_exact_polygon_corroborated,49,1350
+QUEENSTOWN,street_crosswalk_inferred,76,2604
+SEMBAWANG,footprint_corroborated,97,2685
+SEMBAWANG,onemap_exact_polygon_corroborated,43,1318
+SEMBAWANG,street_crosswalk_inferred,110,3461
+SENGKANG,footprint_corroborated,339,11024
+SENGKANG,onemap_exact_no_polygon,1,52
+SENGKANG,onemap_exact_polygon_corroborated,41,1219
+SENGKANG,street_crosswalk_inferred,237,7412
+SERANGOON,footprint_corroborated,110,1944
+SERANGOON,onemap_exact_polygon_corroborated,32,608
+SERANGOON,street_crosswalk_inferred,85,1743
+TAMPINES,footprint_corroborated,315,5986
+TAMPINES,onemap_exact_no_polygon,1,28
+TAMPINES,onemap_exact_polygon_corroborated,126,2885
+TAMPINES,street_crosswalk_inferred,355,8102
+TOA PAYOH,footprint_corroborated,139,3240
+TOA PAYOH,onemap_exact_polygon_corroborated,68,1754
+TOA PAYOH,street_crosswalk_inferred,102,3102
+WOODLANDS,footprint_corroborated,356,8764
+WOODLANDS,onemap_exact_polygon_corroborated,69,1746
+WOODLANDS,street_crosswalk_inferred,265,6860
+YISHUN,footprint_corroborated,307,7580
+YISHUN,onemap_exact_polygon_corroborated,49,1275
+YISHUN,street_crosswalk_inferred,284,7668

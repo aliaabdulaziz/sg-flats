@@ -1,0 +1,239 @@
+geometry_label,code_candidate,geometry_line,matched_code,historical_scope,station_name
+PE3,PE3,PLRT,True,not_approved,Coral Edge
+EW5,EW5,EWL,True,MRT_service_availability_from_2017,Bedok
+PTC,PTC,PLRT,True,not_approved,Punggol
+DT33,DT33,DTL,True,MRT_service_availability_from_2017,Tampines East
+PW7,PW7,PLRT,True,not_approved,Soo Teck
+BP10,BP10,BPLRT,True,not_approved,Fajar
+CC24,CC24,CCL,True,MRT_service_availability_from_2017,Kent Ridge
+TE23,TE23,TEC,True,MRT_service_availability_from_2017,Tanjong Rhu
+CC20,CC20,CCL,True,MRT_service_availability_from_2017,Farrer Road
+NE15,NE15,NEL,True,MRT_service_availability_from_2017,Buangkok
+EW2,EW2,EWL,True,MRT_service_availability_from_2017,Tampines
+PW2,PW2,PLRT,True,LRT_event_only_network_incomplete,Teck Lee
+PE4,PE4,PLRT,True,not_approved,Riviera
+NS3,NS3,NSL,True,MRT_service_availability_from_2017,Bukit Gombak
+EW29,EW29,EWL,True,MRT_service_availability_from_2017,Joo Koon
+SMD,SMD,NEL,False,unclassified,
+NE13,NE13,NEL,True,MRT_service_availability_from_2017,Kovan
+NE17,NE17,NEL,True,MRT_service_availability_from_2017,Punggol
+PW3,PW3,PLRT,True,not_approved,Punggol Point
+PW4,PW4,PLRT,True,not_approved,Samudera
+SW4,SW4,SLRT,True,not_approved,Thanggam
+PE6,PE6,PLRT,True,not_approved,Oasis
+BPLD,BPLD,BPLRT,False,unclassified,
+PE5,PE5,PLRT,True,not_approved,Kadaloor
+PE1,PE1,PLRT,True,not_approved,Cove
+CC28,CC28,CCL,True,MRT_service_availability_from_2017,Telok Blangah
+NS22,NS22,TEC,True,MRT_service_availability_from_2017,Orchard
+DT16 / CE1,DT16,DTCC,True,MRT_service_availability_from_2017,Bayfront
+DT16 / CE1,CE1,DTCC,True,MRT_service_availability_from_2017,Bayfront
+TE26,TE26,TEC,True,MRT_service_availability_from_2017,Marine Parade
+DT27,DT27,DTL,True,MRT_service_availability_from_2017,Ubi
+CC7,CC7,CCL,True,MRT_service_availability_from_2017,Mountbatten
+CC27,CC27,CCL,True,MRT_service_availability_from_2017,Labrador Park
+NE10,NE10,NEL,True,MRT_service_availability_from_2017,Potong Pasir
+CC6,CC6,CCL,True,MRT_service_availability_from_2017,Stadium
+NS22,NS22,NSL,True,MRT_service_availability_from_2017,Orchard
+UPD,UPD,EWL,False,unclassified,
+MD,MD,TEC,False,unclassified,
+BP9,BP9,BPLRT,True,not_approved,Bangkit
+TE5,TE5,TEC,True,MRT_service_availability_from_2017,Lentor
+TE22A,TE22A,TEC,True,not_approved,Founders' Memorial
+EW9,EW9,EWL,True,MRT_service_availability_from_2017,Aljunied
+DT21,DT21,DTL,True,MRT_service_availability_from_2017,Bencoolen
+DT9,DT9,DTL,True,MRT_service_availability_from_2017,Botanic Gardens
+PE2,PE2,PLRT,True,not_approved,Meridian
+DT31,DT31,DTL,True,MRT_service_availability_from_2017,Tampines West
+EW22,EW22,EWL,True,MRT_service_availability_from_2017,Dover
+DT4,DT4,DTL,True,MRT_service_availability_from_2017,Hume
+EW15,EW15,EWL,True,MRT_service_availability_from_2017,Tanjong Pagar
+CC23,CC23,CCL,True,MRT_service_availability_from_2017,one-north
+PW6,PW6,PLRT,True,not_approved,Sumang
+NS8,NS8,NSL,True,MRT_service_availability_from_2017,Marsiling
+PW5,PW5,PLRT,True,not_approved,Nibong
+NE18,NE18,NEL,True,MRT_service_availability_from_2017,Punggol Coast
+PE7,PE7,PLRT,True,not_approved,Damai
+SE4,SE4,SLRT,True,not_approved,Kangkar
+SW2,SW2,SLRT,True,not_approved,Farmway
+TE4,TE4,TEC,True,MRT_service_availability_from_2017,Springleaf
+DT5,DT5,DTL,True,MRT_service_availability_from_2017,Beauty World
+TD,TD,TWE,False,unclassified,
+CC22,CC22,CCL,True,MRT_service_availability_from_2017,Buona Vista
+EW4,EW4,EWL,True,MRT_service_availability_from_2017,Tanah Merah
+SW8,SW8,SLRT,True,not_approved,Renjong
+SW7,SW7,SLRT,True,not_approved,Tongkang
+NE16,NE16,NEL,True,MRT_service_availability_from_2017,Sengkang
+SE3,SE3,SLRT,True,not_approved,Bakau
+TE29,TE29,TEC,True,MRT_service_availability_from_2017,Bayshore
+EW6,EW6,EWL,True,MRT_service_availability_from_2017,Kembangan
+SE1,SE1,SLRT,True,not_approved,Compassvale
+DT28,DT28,DTL,True,MRT_service_availability_from_2017,Kaki Bukit
+BP6,BP6,BPLRT,True,not_approved,Bukit Panjang
+EW7,EW7,EWL,True,MRT_service_availability_from_2017,Eunos
+CC26,CC26,CCL,True,MRT_service_availability_from_2017,Pasir Panjang
+NS19,NS19,NSL,True,MRT_service_availability_from_2017,Toa Payoh
+NS14,NS14,NSL,True,MRT_service_availability_from_2017,Khatib
+DT34,DT34,DTL,True,MRT_service_availability_from_2017,Upper Changi
+EW14 / NS26,EW14,EWNS,True,MRT_service_availability_from_2017,Raffles Place
+EW14 / NS26,NS26,EWNS,True,MRT_service_availability_from_2017,Raffles Place
+TE25,TE25,TEC,True,MRT_service_availability_from_2017,Tanjong Katong
+NS20,NS20,NSL,True,MRT_service_availability_from_2017,Novena
+CC21,CC21,CCL,True,MRT_service_availability_from_2017,Holland Village
+SW3,SW3,SLRT,True,not_approved,Kupang
+SW1,SW1,SLRT,True,not_approved,Cheng Lim
+NS15,NS15,NSL,True,MRT_service_availability_from_2017,Yio Chu Kang
+NS11,NS11,NSL,True,MRT_service_availability_from_2017,Sembawang
+SW6,SW6,SLRT,True,not_approved,Layar
+SE5,SE5,SLRT,True,not_approved,Ranggung
+NS7,NS7,NSL,True,MRT_service_availability_from_2017,Kranji
+BP1,BP1,BPLRT,True,not_approved,Choa Chu Kang
+BP8,BP8,BPLRT,True,not_approved,Pending
+TE15,TE15,TEC,True,MRT_service_availability_from_2017,Great World
+EW8,EW8,EWL,True,MRT_service_availability_from_2017,Paya Lebar
+SLD,SLD,SLRT,False,unclassified,
+SE2,SE2,SLRT,True,not_approved,Rumbia
+TE22,TE22,TEC,True,MRT_service_availability_from_2017,Gardens by the Bay
+CC11,CC11,CCL,True,MRT_service_availability_from_2017,Tai Seng
+NS13,NS13,NSL,True,MRT_service_availability_from_2017,Yishun
+EW26,EW26,EWL,True,MRT_service_availability_from_2017,Lakeside
+NS9,NS9,NSL,True,MRT_service_availability_from_2017,Woodlands
+EW25,EW25,EWL,True,MRT_service_availability_from_2017,Chinese Garden
+EW1,EW1,EWL,True,MRT_service_availability_from_2017,Pasir Ris
+EW13 / NS25,EW13,EWNS,True,MRT_service_availability_from_2017,City Hall
+EW13 / NS25,NS25,EWNS,True,MRT_service_availability_from_2017,City Hall
+DT32,DT32,DTL,True,MRT_service_availability_from_2017,Tampines
+EW27,EW27,EWL,True,MRT_service_availability_from_2017,Boon Lay
+DT8,DT8,DTL,True,MRT_service_availability_from_2017,Tan Kah Kee
+TSCDTFB,TSCDTFB,CCL,False,unclassified,
+DT26,DT26,CCL,True,MRT_service_availability_from_2017,MacPherson
+NE9,NE9,NEL,True,MRT_service_availability_from_2017,Boon Keng
+EW21,EW21,EWL,True,MRT_service_availability_from_2017,Buona Vista
+DT7,DT7,DTL,True,MRT_service_availability_from_2017,Sixth Avenue
+TE7,TE7,TEC,True,MRT_service_availability_from_2017,Bright Hill
+NS16,NS16,NSL,True,MRT_service_availability_from_2017,Ang Mo Kio
+CC16,CC16,CCL,True,MRT_service_availability_from_2017,Marymount
+NE11,NE11,NEL,True,MRT_service_availability_from_2017,Woodleigh
+NS12,NS12,NSL,True,MRT_service_availability_from_2017,Canberra
+EW3,EW3,EWL,True,MRT_service_availability_from_2017,Simei
+DT23,DT23,DTL,True,MRT_service_availability_from_2017,Bendemeer
+NS17,NS17,NSL,True,MRT_service_availability_from_2017,Bishan
+STC,STC,SLRT,True,not_approved,Sengkang
+EW20,EW20,EWL,True,MRT_service_availability_from_2017,Commonwealth
+DT24,DT24,DTL,True,MRT_service_availability_from_2017,Geylang Bahru
+NE5,NE5,NEL,True,MRT_service_availability_from_2017,Clarke Quay
+DT30,DT30,DTL,True,MRT_service_availability_from_2017,Bedok Reservoir
+CC2,CC2,CCL,True,MRT_service_availability_from_2017,Bras Basah
+CC29,CC29,CCL,True,MRT_service_availability_from_2017,HarbourFront
+CG2,CG2,CA,True,MRT_service_availability_from_2017,Changi Airport
+EW23,EW23,EWL,True,MRT_service_availability_from_2017,Clementi
+CC10,CC10,DTL,True,MRT_service_availability_from_2017,MacPherson
+EW33,EW33,TWE,True,MRT_service_availability_from_2017,Tuas Link
+DT10,DT10,TEC,True,MRT_service_availability_from_2017,Stevens
+BP13,BP13,BPLRT,True,not_approved,Senja
+CC25,CC25,CCL,True,MRT_service_availability_from_2017,Haw Par Villa
+DT10,DT10,DTL,True,MRT_service_availability_from_2017,Stevens
+NS4,NS4,NSL,True,MRT_service_availability_from_2017,Choa Chu Kang
+NS10,NS10,NSL,True,MRT_service_availability_from_2017,Admiralty
+TSFB,TSFB,DTL,False,unclassified,
+EW32,EW32,TWE,True,MRT_service_availability_from_2017,Tuas West Road
+TE10,TE10,TEC,True,not_approved,Mount Pleasant
+TE27,TE27,TEC,True,MRT_service_availability_from_2017,Marine Terrace
+CC15,CC15,CCL,True,MRT_service_availability_from_2017,Bishan
+CC17,CC17,TEC,True,MRT_service_availability_from_2017,Caldecott
+NS18,NS18,NSL,True,MRT_service_availability_from_2017,Braddell
+KCD,KCD,CCL,False,unclassified,
+CC17,CC17,CCL,True,MRT_service_availability_from_2017,Caldecott
+ST,ST,DTL,False,unclassified,
+CG1,CG1,CA,True,MRT_service_availability_from_2017,Expo
+TE16,TE16,TEC,True,MRT_service_availability_from_2017,Havelock
+CC5,CC5,CCL,True,MRT_service_availability_from_2017,Nicoll Highway
+EW11,EW11,EWL,True,MRT_service_availability_from_2017,Lavender
+EW19,EW19,EWL,True,MRT_service_availability_from_2017,Queenstown
+TE24,TE24,TEC,True,MRT_service_availability_from_2017,Katong Park
+EW10,EW10,EWL,True,MRT_service_availability_from_2017,Kallang
+TE28,TE28,TEC,True,MRT_service_availability_from_2017,Siglap
+HSSCT,HSSCT,DTL,False,unclassified,
+DT22,DT22,DTL,True,MRT_service_availability_from_2017,Jalan Besar
+TE13,TE13,TEC,True,MRT_service_availability_from_2017,Orchard Boulevard
+DT29,DT29,DTL,True,MRT_service_availability_from_2017,Bedok North
+CC9,CC9,CCL,True,MRT_service_availability_from_2017,Paya Lebar
+EW18,EW18,EWL,True,MRT_service_availability_from_2017,Redhill
+TE12,TE12,TEC,True,MRT_service_availability_from_2017,Napier
+BP12,BP12,BPLRT,True,not_approved,Jelapang
+DT19,DT19,DTL,True,MRT_service_availability_from_2017,Chinatown
+TE18,TE18,TEC,True,MRT_service_availability_from_2017,Maxwell
+CC19,CC19,CCL,True,MRT_service_availability_from_2017,Botanic Gardens
+DT20,DT20,DTL,True,MRT_service_availability_from_2017,Fort Canning
+NS24,NS24,NSL,True,MRT_service_availability_from_2017,Dhoby Ghaut
+CC3,CC3,CCL,True,MRT_service_availability_from_2017,Esplanade
+EW17,EW17,EWL,True,MRT_service_availability_from_2017,Tiong Bahru
+TE6,TE6,TEC,True,MRT_service_availability_from_2017,Mayflower
+CC14,CC14,CCL,True,MRT_service_availability_from_2017,Lorong Chuan
+CC13,CC13,CCL,True,MRT_service_availability_from_2017,Serangoon
+CC12,CC12,CCL,True,MRT_service_availability_from_2017,Bartley
+NE12,NE12,NEL,True,MRT_service_availability_from_2017,Serangoon
+BP3,BP3,BPLRT,True,not_approved,Keat Hong
+SW5,SW5,SLRT,True,not_approved,Fernvale
+NS23,NS23,NSL,True,MRT_service_availability_from_2017,Somerset
+NS21,NS21,NSL,True,MRT_service_availability_from_2017,Newton
+DT11,DT11,DTL,True,MRT_service_availability_from_2017,Newton
+DT12,DT12,DTL,True,MRT_service_availability_from_2017,Little India
+NE7,NE7,NEL,True,MRT_service_availability_from_2017,Little India
+DT3,DT3,DTL,True,MRT_service_availability_from_2017,Hillview
+DT13,DT13,DTL,True,MRT_service_availability_from_2017,Rochor
+BP7,BP7,BPLRT,True,not_approved,Petir
+DT1,DT1,DTL,True,MRT_service_availability_from_2017,Bukit Panjang
+DT35,DT35,DTL,True,MRT_service_availability_from_2017,Expo
+CD,CD,EWL,False,unclassified,
+BOCC,BOCC,DTL,False,unclassified,
+DT6,DT6,DTL,True,MRT_service_availability_from_2017,King Albert Park
+DT2,DT2,DTL,True,MRT_service_availability_from_2017,Cashew
+EW30,EW30,TWE,True,MRT_service_availability_from_2017,Gul Circle
+CC29,CC29,NEL,True,MRT_service_availability_from_2017,HarbourFront
+DT18,DT18,DTL,True,MRT_service_availability_from_2017,Telok Ayer
+BP5,BP5,BPLRT,True,not_approved,Phoenix
+BP4,BP4,BPLRT,True,not_approved,Teck Whye
+GBD,GBD,DTL,False,unclassified,
+TE1,TE1,TEC,True,MRT_service_availability_from_2017,Woodlands North
+NE14,NE14,NEL,True,MRT_service_availability_from_2017,Hougang
+TE8,TE8,TEC,True,MRT_service_availability_from_2017,Upper Thomson
+BP11,BP11,BPLRT,True,not_approved,Segar
+BD,BD,NSL,False,unclassified,
+EW28,EW28,EWL,True,MRT_service_availability_from_2017,Pioneer
+EW16,EW16,EWL,True,MRT_service_availability_from_2017,Outram Park
+NE4,NE4,NEL,True,MRT_service_availability_from_2017,Chinatown
+NE3,NE3,NEL,True,MRT_service_availability_from_2017,Outram Park
+EW16,EW16,TEC,True,MRT_service_availability_from_2017,Outram Park
+TE3,TE3,TEC,True,MRT_service_availability_from_2017,Woodlands South
+TE2,TE2,TEC,True,MRT_service_availability_from_2017,Woodlands
+EW31,EW31,TWE,True,MRT_service_availability_from_2017,Tuas Crescent
+CC30,CC30,CCL,True,MRT_service_availability_from_2017,Keppel
+CC31,CC31,CCL,True,MRT_service_availability_from_2017,Cantonment
+CC32,CC32,CCL,True,MRT_service_availability_from_2017,Prince Edward Road
+BP2,BP2,BPLRT,True,not_approved,South View
+NS2,NS2,NSL,True,MRT_service_availability_from_2017,Bukit Batok
+NE8,NE8,NEL,True,MRT_service_availability_from_2017,Farrer Park
+CC8,CC8,CCL,True,MRT_service_availability_from_2017,Dakota
+CC18,CC18,CCL,False,unclassified,
+NE6,NE6,NEL,True,MRT_service_availability_from_2017,Dhoby Ghaut
+TE29,TE29,TEC,True,MRT_service_availability_from_2017,Bayshore
+PW1,PW1,PLRT,True,not_approved,Sam Kee
+DT25,DT25,DTL,True,MRT_service_availability_from_2017,Mattar
+TE26,TE26,TEC,True,MRT_service_availability_from_2017,Marine Parade
+CC1,CC1,CCL,True,MRT_service_availability_from_2017,Dhoby Ghaut
+EW12,EW12,EWL,True,MRT_service_availability_from_2017,Bugis
+DT14,DT14,DTL,True,MRT_service_availability_from_2017,Bugis
+NS5,NS5,NSL,True,MRT_service_availability_from_2017,Yew Tee
+EW24 / NS1,EW24,EWNS,True,MRT_service_availability_from_2017,Jurong East
+EW24 / NS1,NS1,EWNS,True,MRT_service_availability_from_2017,Jurong East
+CE2,CE2,CCL,True,MRT_service_availability_from_2017,Marina Bay
+CC4,CC4,CCL,True,MRT_service_availability_from_2017,Promenade
+NS27,NS27,NSL,True,MRT_service_availability_from_2017,Marina Bay
+DT15,DT15,DTL,True,MRT_service_availability_from_2017,Promenade
+DT17,DT17,DTL,True,MRT_service_availability_from_2017,Downtown
+NS28,NS28,NSL,True,MRT_service_availability_from_2017,Marina South Pier
+CE2,CE2,TEC,True,MRT_service_availability_from_2017,Marina Bay
+TE19,TE19,TEC,True,MRT_service_availability_from_2017,Shenton Way
+TE21,TE21,TEC,True,not_approved,Marina South
+CE2,CE2,TEC,True,MRT_service_availability_from_2017,Marina Bay

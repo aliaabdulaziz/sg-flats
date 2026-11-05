@@ -1,0 +1,175 @@
+station_code,station_name,available_from,first_full_service_month,date_type
+NS1,Jurong East,2017-01-01,2017-01,left_censored_before_model_window
+NS2,Bukit Batok,2017-01-01,2017-01,left_censored_before_model_window
+NS3,Bukit Gombak,2017-01-01,2017-01,left_censored_before_model_window
+NS4,Choa Chu Kang,2017-01-01,2017-01,left_censored_before_model_window
+NS5,Yew Tee,2017-01-01,2017-01,left_censored_before_model_window
+NS7,Kranji,2017-01-01,2017-01,left_censored_before_model_window
+NS8,Marsiling,2017-01-01,2017-01,left_censored_before_model_window
+NS9,Woodlands,2017-01-01,2017-01,left_censored_before_model_window
+NS10,Admiralty,2017-01-01,2017-01,left_censored_before_model_window
+NS11,Sembawang,2017-01-01,2017-01,left_censored_before_model_window
+NS12,Canberra,2019-11-02,2019-12,passenger_service_date
+NS13,Yishun,2017-01-01,2017-01,left_censored_before_model_window
+NS14,Khatib,2017-01-01,2017-01,left_censored_before_model_window
+NS15,Yio Chu Kang,2017-01-01,2017-01,left_censored_before_model_window
+NS16,Ang Mo Kio,2017-01-01,2017-01,left_censored_before_model_window
+NS17,Bishan,2017-01-01,2017-01,left_censored_before_model_window
+NS18,Braddell,2017-01-01,2017-01,left_censored_before_model_window
+NS19,Toa Payoh,2017-01-01,2017-01,left_censored_before_model_window
+NS20,Novena,2017-01-01,2017-01,left_censored_before_model_window
+NS21,Newton,2017-01-01,2017-01,left_censored_before_model_window
+NS22,Orchard,2017-01-01,2017-01,left_censored_before_model_window
+NS23,Somerset,2017-01-01,2017-01,left_censored_before_model_window
+NS24,Dhoby Ghaut,2017-01-01,2017-01,left_censored_before_model_window
+NS25,City Hall,2017-01-01,2017-01,left_censored_before_model_window
+NS26,Raffles Place,2017-01-01,2017-01,left_censored_before_model_window
+NS27,Marina Bay,2017-01-01,2017-01,left_censored_before_model_window
+NS28,Marina South Pier,2017-01-01,2017-01,left_censored_before_model_window
+EW1,Pasir Ris,2017-01-01,2017-01,left_censored_before_model_window
+EW2,Tampines,2017-01-01,2017-01,left_censored_before_model_window
+EW3,Simei,2017-01-01,2017-01,left_censored_before_model_window
+EW4,Tanah Merah,2017-01-01,2017-01,left_censored_before_model_window
+EW5,Bedok,2017-01-01,2017-01,left_censored_before_model_window
+EW6,Kembangan,2017-01-01,2017-01,left_censored_before_model_window
+EW7,Eunos,2017-01-01,2017-01,left_censored_before_model_window
+EW8,Paya Lebar,2017-01-01,2017-01,left_censored_before_model_window
+EW9,Aljunied,2017-01-01,2017-01,left_censored_before_model_window
+EW10,Kallang,2017-01-01,2017-01,left_censored_before_model_window
+EW11,Lavender,2017-01-01,2017-01,left_censored_before_model_window
+EW12,Bugis,2017-01-01,2017-01,left_censored_before_model_window
+EW13,City Hall,2017-01-01,2017-01,left_censored_before_model_window
+EW14,Raffles Place,2017-01-01,2017-01,left_censored_before_model_window
+EW15,Tanjong Pagar,2017-01-01,2017-01,left_censored_before_model_window
+EW16,Outram Park,2017-01-01,2017-01,left_censored_before_model_window
+EW17,Tiong Bahru,2017-01-01,2017-01,left_censored_before_model_window
+EW18,Redhill,2017-01-01,2017-01,left_censored_before_model_window
+EW19,Queenstown,2017-01-01,2017-01,left_censored_before_model_window
+EW20,Commonwealth,2017-01-01,2017-01,left_censored_before_model_window
+EW21,Buona Vista,2017-01-01,2017-01,left_censored_before_model_window
+EW22,Dover,2017-01-01,2017-01,left_censored_before_model_window
+EW23,Clementi,2017-01-01,2017-01,left_censored_before_model_window
+EW24,Jurong East,2017-01-01,2017-01,left_censored_before_model_window
+EW25,Chinese Garden,2017-01-01,2017-01,left_censored_before_model_window
+EW26,Lakeside,2017-01-01,2017-01,left_censored_before_model_window
+EW27,Boon Lay,2017-01-01,2017-01,left_censored_before_model_window
+EW28,Pioneer,2017-01-01,2017-01,left_censored_before_model_window
+EW29,Joo Koon,2017-01-01,2017-01,left_censored_before_model_window
+EW30,Gul Circle,2017-06-18,2017-07,passenger_service_date
+EW31,Tuas Crescent,2017-06-18,2017-07,passenger_service_date
+EW32,Tuas West Road,2017-06-18,2017-07,passenger_service_date
+EW33,Tuas Link,2017-06-18,2017-07,passenger_service_date
+CG1,Expo,2017-01-01,2017-01,left_censored_before_model_window
+CG2,Changi Airport,2017-01-01,2017-01,left_censored_before_model_window
+NE1,HarbourFront,2017-01-01,2017-01,left_censored_before_model_window
+NE3,Outram Park,2017-01-01,2017-01,left_censored_before_model_window
+NE4,Chinatown,2017-01-01,2017-01,left_censored_before_model_window
+NE5,Clarke Quay,2017-01-01,2017-01,left_censored_before_model_window
+NE6,Dhoby Ghaut,2017-01-01,2017-01,left_censored_before_model_window
+NE7,Little India,2017-01-01,2017-01,left_censored_before_model_window
+NE8,Farrer Park,2017-01-01,2017-01,left_censored_before_model_window
+NE9,Boon Keng,2017-01-01,2017-01,left_censored_before_model_window
+NE10,Potong Pasir,2017-01-01,2017-01,left_censored_before_model_window
+NE11,Woodleigh,2017-01-01,2017-01,left_censored_before_model_window
+NE12,Serangoon,2017-01-01,2017-01,left_censored_before_model_window
+NE13,Kovan,2017-01-01,2017-01,left_censored_before_model_window
+NE14,Hougang,2017-01-01,2017-01,left_censored_before_model_window
+NE15,Buangkok,2017-01-01,2017-01,left_censored_before_model_window
+NE16,Sengkang,2017-01-01,2017-01,left_censored_before_model_window
+NE17,Punggol,2017-01-01,2017-01,left_censored_before_model_window
+NE18,Punggol Coast,2024-12-10,2025-01,passenger_service_date
+CC1,Dhoby Ghaut,2017-01-01,2017-01,left_censored_before_model_window
+CC2,Bras Basah,2017-01-01,2017-01,left_censored_before_model_window
+CC3,Esplanade,2017-01-01,2017-01,left_censored_before_model_window
+CC4,Promenade,2017-01-01,2017-01,left_censored_before_model_window
+CC5,Nicoll Highway,2017-01-01,2017-01,left_censored_before_model_window
+CC6,Stadium,2017-01-01,2017-01,left_censored_before_model_window
+CC7,Mountbatten,2017-01-01,2017-01,left_censored_before_model_window
+CC8,Dakota,2017-01-01,2017-01,left_censored_before_model_window
+CC9,Paya Lebar,2017-01-01,2017-01,left_censored_before_model_window
+CC10,MacPherson,2017-01-01,2017-01,left_censored_before_model_window
+CC11,Tai Seng,2017-01-01,2017-01,left_censored_before_model_window
+CC12,Bartley,2017-01-01,2017-01,left_censored_before_model_window
+CC13,Serangoon,2017-01-01,2017-01,left_censored_before_model_window
+CC14,Lorong Chuan,2017-01-01,2017-01,left_censored_before_model_window
+CC15,Bishan,2017-01-01,2017-01,left_censored_before_model_window
+CC16,Marymount,2017-01-01,2017-01,left_censored_before_model_window
+CC17,Caldecott,2017-01-01,2017-01,left_censored_before_model_window
+CC19,Botanic Gardens,2017-01-01,2017-01,left_censored_before_model_window
+CC20,Farrer Road,2017-01-01,2017-01,left_censored_before_model_window
+CC21,Holland Village,2017-01-01,2017-01,left_censored_before_model_window
+CC22,Buona Vista,2017-01-01,2017-01,left_censored_before_model_window
+CC23,one-north,2017-01-01,2017-01,left_censored_before_model_window
+CC24,Kent Ridge,2017-01-01,2017-01,left_censored_before_model_window
+CC25,Haw Par Villa,2017-01-01,2017-01,left_censored_before_model_window
+CC26,Pasir Panjang,2017-01-01,2017-01,left_censored_before_model_window
+CC27,Labrador Park,2017-01-01,2017-01,left_censored_before_model_window
+CC28,Telok Blangah,2017-01-01,2017-01,left_censored_before_model_window
+CC29,HarbourFront,2017-01-01,2017-01,left_censored_before_model_window
+CE1,Bayfront,2017-01-01,2017-01,left_censored_before_model_window
+CE2,Marina Bay,2017-01-01,2017-01,left_censored_before_model_window
+DT1,Bukit Panjang,2017-01-01,2017-01,left_censored_before_model_window
+DT2,Cashew,2017-01-01,2017-01,left_censored_before_model_window
+DT3,Hillview,2017-01-01,2017-01,left_censored_before_model_window
+DT4,Hume,2025-02-28,2025-03,passenger_service_date
+DT5,Beauty World,2017-01-01,2017-01,left_censored_before_model_window
+DT6,King Albert Park,2017-01-01,2017-01,left_censored_before_model_window
+DT7,Sixth Avenue,2017-01-01,2017-01,left_censored_before_model_window
+DT8,Tan Kah Kee,2017-01-01,2017-01,left_censored_before_model_window
+DT9,Botanic Gardens,2017-01-01,2017-01,left_censored_before_model_window
+DT10,Stevens,2017-01-01,2017-01,left_censored_before_model_window
+DT11,Newton,2017-01-01,2017-01,left_censored_before_model_window
+DT12,Little India,2017-01-01,2017-01,left_censored_before_model_window
+DT13,Rochor,2017-01-01,2017-01,left_censored_before_model_window
+DT14,Bugis,2017-01-01,2017-01,left_censored_before_model_window
+DT15,Promenade,2017-01-01,2017-01,left_censored_before_model_window
+DT16,Bayfront,2017-01-01,2017-01,left_censored_before_model_window
+DT17,Downtown,2017-01-01,2017-01,left_censored_before_model_window
+DT18,Telok Ayer,2017-01-01,2017-01,left_censored_before_model_window
+DT19,Chinatown,2017-01-01,2017-01,left_censored_before_model_window
+DT20,Fort Canning,2017-10-21,2017-11,passenger_service_date
+DT21,Bencoolen,2017-10-21,2017-11,passenger_service_date
+DT22,Jalan Besar,2017-10-21,2017-11,passenger_service_date
+DT23,Bendemeer,2017-10-21,2017-11,passenger_service_date
+DT24,Geylang Bahru,2017-10-21,2017-11,passenger_service_date
+DT25,Mattar,2017-10-21,2017-11,passenger_service_date
+DT26,MacPherson,2017-10-21,2017-11,passenger_service_date
+DT27,Ubi,2017-10-21,2017-11,passenger_service_date
+DT28,Kaki Bukit,2017-10-21,2017-11,passenger_service_date
+DT29,Bedok North,2017-10-21,2017-11,passenger_service_date
+DT30,Bedok Reservoir,2017-10-21,2017-11,passenger_service_date
+DT31,Tampines West,2017-10-21,2017-11,passenger_service_date
+DT32,Tampines,2017-10-21,2017-11,passenger_service_date
+DT33,Tampines East,2017-10-21,2017-11,passenger_service_date
+DT34,Upper Changi,2017-10-21,2017-11,passenger_service_date
+DT35,Expo,2017-10-21,2017-11,passenger_service_date
+TE1,Woodlands North,2020-01-31,2020-02,passenger_service_date
+TE2,Woodlands,2020-01-31,2020-02,passenger_service_date
+TE3,Woodlands South,2020-01-31,2020-02,passenger_service_date
+TE4,Springleaf,2021-08-28,2021-09,passenger_service_date
+TE5,Lentor,2021-08-28,2021-09,passenger_service_date
+TE6,Mayflower,2021-08-28,2021-09,passenger_service_date
+TE7,Bright Hill,2021-08-28,2021-09,passenger_service_date
+TE8,Upper Thomson,2021-08-28,2021-09,passenger_service_date
+TE9,Caldecott,2021-08-28,2021-09,passenger_service_date
+TE11,Stevens,2022-11-13,2022-12,passenger_service_date
+TE12,Napier,2022-11-13,2022-12,passenger_service_date
+TE13,Orchard Boulevard,2022-11-13,2022-12,passenger_service_date
+TE14,Orchard,2022-11-13,2022-12,passenger_service_date
+TE15,Great World,2022-11-13,2022-12,passenger_service_date
+TE16,Havelock,2022-11-13,2022-12,passenger_service_date
+TE17,Outram Park,2022-11-13,2022-12,passenger_service_date
+TE18,Maxwell,2022-11-13,2022-12,passenger_service_date
+TE19,Shenton Way,2022-11-13,2022-12,passenger_service_date
+TE20,Marina Bay,2022-11-13,2022-12,passenger_service_date
+TE22,Gardens by the Bay,2022-11-13,2022-12,passenger_service_date
+TE23,Tanjong Rhu,2024-06-23,2024-07,passenger_service_date
+TE24,Katong Park,2024-06-23,2024-07,passenger_service_date
+TE25,Tanjong Katong,2024-06-23,2024-07,passenger_service_date
+TE26,Marine Parade,2024-06-23,2024-07,passenger_service_date
+TE27,Marine Terrace,2024-06-23,2024-07,passenger_service_date
+TE28,Siglap,2024-06-23,2024-07,passenger_service_date
+TE29,Bayshore,2024-06-23,2024-07,passenger_service_date
+CC30,Keppel,2026-07-12,2026-08,passenger_service_date
+CC31,Cantonment,2026-07-12,2026-08,passenger_service_date
+CC32,Prince Edward Road,2026-07-12,2026-08,passenger_service_date

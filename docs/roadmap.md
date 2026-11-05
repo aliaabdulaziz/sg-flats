@@ -6,7 +6,7 @@ Build a reproducible project that helps buyers compare housing trade-offs. Deliv
 
 ## Phase 0: Data audit and design
 
-Initial audit results are in [phase0-audit.md](phase0-audit.md). Downloads and profiling have been run; address-to-coordinate verification, historical transport coverage and authenticated routing tests remain open.
+Initial audit results are in [phase0-audit.md](phase0-audit.md). Downloads, profiling and [coordinate validation](coordinate-validation.md) have been run. [Historical transport decisions](transport-history.md) support dated MRT service availability with conditional location proxies; historical exit/bus/LRT/routing features remain excluded. Authenticated routing performance and final modelling gates remain open.
 
 - Inspect HDB transaction schemas, date range, duplicates, nulls and anomalous prices; document older dataset changes.
 - Obtain HDB property information and investigate building polygons or OneMap for block matching. Test a sample, calculate match rates and inspect errors; preserve unmatched records and their exclusion reasons.

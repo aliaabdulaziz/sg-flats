@@ -1,6 +1,6 @@
 # Data source research
 
-Research date: 5 November 2026. The initial source review is now supplemented by a [downloaded-data audit](phase0-audit.md). HDB resale, property and building data and LTA static transport files were downloaded and profiled. Coordinate accuracy, historical transport validity and authenticated API behaviour remain unverified. Check current terms before acquisition, redistribution or deployment.
+Research date: 5 November 2026. The initial source review is now supplemented by a [downloaded-data audit](phase0-audit.md). HDB resale, property and building data and LTA static transport files were downloaded and profiled. [Coordinate matching and sampled OneMap validation](coordinate-validation.md) have now been run; [transport history](transport-history.md) is assessed separately. Full historical network reconstruction and route-time API testing remain unverified. Check current terms before acquisition, redistribution or deployment.
 
 This is a research inventory, not a list of datasets already used. The proposed core sources below are starting points for the data audit; the remaining sources are optional references or alternatives. We will record which sources are actually adopted after testing coverage, matching and usage terms.
 
@@ -8,7 +8,9 @@ This is a research inventory, not a list of datasets already used. The proposed 
 
 - Downloaded and profiled: HDB 2017-onward resale, Property Information, Existing Building, LTA station polygons, station exits and bus-stop points.
 - Investigated alternative: LTA Road Section Line; no road-name field was present, so it did not solve the building street-code bridge.
-- Access still required: documented OneMap token and LTA account key for authenticated geocoding, routes/services and routing tests.
+- OneMap authenticated address search: tested using a locally configured token. No token is committed. LTA dynamic routes/services and OneMap route-time performance remain untested.
+- NUS Urban Analytics Lab hdb3d-data: adopted as a labelled footprint corroboration source, with pinned version and known-error caveats; see [attribution](third-party-notices.md).
+- LTA station-code workbook and official LTA/MOT opening announcements: used to build the sourced MRT service register.
 - Additional source candidates remain research only unless identified in the audit. Download success does not imply a source is approved for historical model features.
 
 ## Proposed core sources

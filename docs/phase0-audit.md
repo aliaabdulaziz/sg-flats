@@ -1,6 +1,6 @@
 # Phase 0: Initial data audit
 
-Audit date: 5 November 2026 (Singapore time). Status: first audit completed; coordinate verification, historical transport coverage and authenticated routing tests remain open. No price model or app has been built.
+Audit date: 5 November 2026 (Singapore time). Status: initial snapshot audit completed. A subsequent [coordinate validation](coordinate-validation.md) assigns all addresses with confidence tiers, and [transport history review](transport-history.md) defines which features are supported. Authenticated route-time testing remains open. The findings below preserve the initial audit stage. No price model or app has been built.
 
 ## Findings
 
