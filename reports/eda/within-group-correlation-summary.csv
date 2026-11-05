@@ -1,0 +1,4 @@
+feature,strata,median_spearman,share_positive
+floor_area_sqm,739,-0.265025,0.213802
+lease_years,739,0.473246,0.847091
+storey_lower,739,0.412326,0.990528

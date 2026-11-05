@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1014" viewBox="0 0 1000 1014" role="img" aria-labelledby="title desc">
+<title id="title">Median resale price per square metre by town</title><desc id="desc">Pooled medians; differences are not estimates of a town effect.</desc>
+<rect width="100%" height="100%" fill="#ffffff"/>
+<g font-family="Arial, sans-serif" fill="#16324f">
+<text x="24" y="32" font-size="21" font-weight="bold">Median resale price per square metre by town</text>
+<text x="24" y="57" font-size="13">S$ per square metre · training period 2017–2024</text>
+<text x="198" y="96" text-anchor="end" font-size="13">WOODLANDS</text>
+<rect x="210" y="78" width="348.51" height="24" rx="3" fill="#267f85"/>
+<text x="567.51" y="96" font-size="13">4,267</text>
+<text x="198" y="130" text-anchor="end" font-size="13">JURONG WEST</text>
+<rect x="210" y="112" width="357.31" height="24" rx="3" fill="#267f85"/>
+<text x="576.31" y="130" font-size="13">4,375</text>
+<text x="198" y="164" text-anchor="end" font-size="13">CHOA CHU KANG</text>
+<rect x="210" y="146" width="364.09" height="24" rx="3" fill="#267f85"/>
+<text x="583.09" y="164" font-size="13">4,458</text>
+<text x="198" y="198" text-anchor="end" font-size="13">PASIR RIS</text>
+<rect x="210" y="180" width="374.79" height="24" rx="3" fill="#267f85"/>
+<text x="593.79" y="198" font-size="13">4,589</text>
+<text x="198" y="232" text-anchor="end" font-size="13">YISHUN</text>
+<rect x="210" y="214" width="376.94" height="24" rx="3" fill="#267f85"/>
+<text x="595.94" y="232" font-size="13">4,615</text>
+<text x="198" y="266" text-anchor="end" font-size="13">JURONG EAST</text>
+<rect x="210" y="248" width="383.97" height="24" rx="3" fill="#267f85"/>
+<text x="602.97" y="266" font-size="13">4,701</text>
+<text x="198" y="300" text-anchor="end" font-size="13">SEMBAWANG</text>
+<rect x="210" y="282" width="384.51" height="24" rx="3" fill="#267f85"/>
+<text x="603.51" y="300" font-size="13">4,708</text>
+<text x="198" y="334" text-anchor="end" font-size="13">BUKIT PANJANG</text>
+<rect x="210" y="316" width="386.40" height="24" rx="3" fill="#267f85"/>
+<text x="605.40" y="334" font-size="13">4,731</text>
+<text x="198" y="368" text-anchor="end" font-size="13">HOUGANG</text>
+<rect x="210" y="350" width="399.28" height="24" rx="3" fill="#267f85"/>
+<text x="618.28" y="368" font-size="13">4,889</text>
+<text x="198" y="402" text-anchor="end" font-size="13">BUKIT BATOK</text>
+<rect x="210" y="384" width="399.40" height="24" rx="3" fill="#267f85"/>
+<text x="618.40" y="402" font-size="13">4,890</text>
+<text x="198" y="436" text-anchor="end" font-size="13">BEDOK</text>
+<rect x="210" y="418" width="400.42" height="24" rx="3" fill="#267f85"/>
+<text x="619.42" y="436" font-size="13">4,903</text>
+<text x="198" y="470" text-anchor="end" font-size="13">TAMPINES</text>
+<rect x="210" y="452" width="404.57" height="24" rx="3" fill="#267f85"/>
+<text x="623.57" y="470" font-size="13">4,954</text>
+<text x="198" y="504" text-anchor="end" font-size="13">ANG MO KIO</text>
+<rect x="210" y="486" width="408.35" height="24" rx="3" fill="#267f85"/>
+<text x="627.35" y="504" font-size="13">5,000</text>
+<text x="198" y="538" text-anchor="end" font-size="13">SENGKANG</text>
+<rect x="210" y="520" width="412.70" height="24" rx="3" fill="#267f85"/>
+<text x="631.70" y="538" font-size="13">5,053</text>
+<text x="198" y="572" text-anchor="end" font-size="13">SERANGOON</text>
+<rect x="210" y="554" width="437.02" height="24" rx="3" fill="#267f85"/>
+<text x="656.02" y="572" font-size="13">5,351</text>
+<text x="198" y="606" text-anchor="end" font-size="13">GEYLANG</text>
+<rect x="210" y="588" width="437.97" height="24" rx="3" fill="#267f85"/>
+<text x="656.97" y="606" font-size="13">5,363</text>
+<text x="198" y="640" text-anchor="end" font-size="13">TOA PAYOH</text>
+<rect x="210" y="622" width="444.77" height="24" rx="3" fill="#267f85"/>
+<text x="663.77" y="640" font-size="13">5,446</text>
+<text x="198" y="674" text-anchor="end" font-size="13">PUNGGOL</text>
+<rect x="210" y="656" width="450.09" height="24" rx="3" fill="#267f85"/>
+<text x="669.09" y="674" font-size="13">5,511</text>
+<text x="198" y="708" text-anchor="end" font-size="13">CLEMENTI</text>
+<rect x="210" y="690" width="452.96" height="24" rx="3" fill="#267f85"/>
+<text x="671.96" y="708" font-size="13">5,546</text>
+<text x="198" y="742" text-anchor="end" font-size="13">KALLANG/WHAMPOA</text>
+<rect x="210" y="724" width="486.13" height="24" rx="3" fill="#267f85"/>
+<text x="705.13" y="742" font-size="13">5,952</text>
+<text x="198" y="776" text-anchor="end" font-size="13">MARINE PARADE</text>
+<rect x="210" y="758" width="502.59" height="24" rx="3" fill="#267f85"/>
+<text x="721.59" y="776" font-size="13">6,154</text>
+<text x="198" y="810" text-anchor="end" font-size="13">BISHAN</text>
+<rect x="210" y="792" width="505.58" height="24" rx="3" fill="#267f85"/>
+<text x="724.58" y="810" font-size="13">6,190</text>
+<text x="198" y="844" text-anchor="end" font-size="13">BUKIT TIMAH</text>
+<rect x="210" y="826" width="541.94" height="24" rx="3" fill="#267f85"/>
+<text x="760.94" y="844" font-size="13">6,636</text>
+<text x="198" y="878" text-anchor="end" font-size="13">BUKIT MERAH</text>
+<rect x="210" y="860" width="543.33" height="24" rx="3" fill="#267f85"/>
+<text x="762.33" y="878" font-size="13">6,653</text>
+<text x="198" y="912" text-anchor="end" font-size="13">QUEENSTOWN</text>
+<rect x="210" y="894" width="588.70" height="24" rx="3" fill="#267f85"/>
+<text x="807.70" y="912" font-size="13">7,208</text>
+<text x="198" y="946" text-anchor="end" font-size="13">CENTRAL AREA</text>
+<rect x="210" y="928" width="609.52" height="24" rx="3" fill="#267f85"/>
+<text x="828.52" y="946" font-size="13">7,463</text>
+<text x="24" y="996" font-size="12">Pooled medians; differences are not estimates of a town effect.</text>
+</g></svg>

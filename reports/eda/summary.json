@@ -1,0 +1,208 @@
+{
+  "training_months": [
+    "2017-01",
+    "2024-12"
+  ],
+  "training_rows": 196982,
+  "training_addresses": 9610,
+  "source_sha256": "78f6e47b0c52a9c5727af21a55ee2267ccd842002b14d11f0e7729ccc35ea163",
+  "analysis_sha256": "98122adb9d02f1eeaa928c7e0c42cec755d10d85543b6600e9028e757825b015",
+  "other_splits_analysed": false,
+  "annual": [
+    {
+      "year": 2017,
+      "transactions": 20509,
+      "addresses": 7011,
+      "median_price": 410000.0,
+      "median_psm": 4281.879194630873,
+      "median_area": 96.0,
+      "median_lease_years": 74.66666666666667
+    },
+    {
+      "year": 2018,
+      "transactions": 21561,
+      "addresses": 7190,
+      "median_price": 408000.0,
+      "median_psm": 4208.791208791209,
+      "median_area": 97.0,
+      "median_lease_years": 74.41666666666667
+    },
+    {
+      "year": 2019,
+      "transactions": 22186,
+      "addresses": 7330,
+      "median_price": 400000.0,
+      "median_psm": 4175.824175824176,
+      "median_area": 94.0,
+      "median_lease_years": 74.20833333333334
+    },
+    {
+      "year": 2020,
+      "transactions": 23333,
+      "addresses": 7446,
+      "median_price": 425000.0,
+      "median_psm": 4355.809523809524,
+      "median_area": 93.0,
+      "median_lease_years": 75.41666666666667
+    },
+    {
+      "year": 2021,
+      "transactions": 29087,
+      "addresses": 7989,
+      "median_price": 483000.0,
+      "median_psm": 4915.789473684211,
+      "median_area": 93.0,
+      "median_lease_years": 75.58333333333333
+    },
+    {
+      "year": 2022,
+      "transactions": 26720,
+      "addresses": 8002,
+      "median_price": 525000.0,
+      "median_psm": 5373.134328358209,
+      "median_area": 93.0,
+      "median_lease_years": 74.16666666666667
+    },
+    {
+      "year": 2023,
+      "transactions": 25754,
+      "addresses": 7949,
+      "median_price": 550000.0,
+      "median_psm": 5708.808932038835,
+      "median_area": 93.0,
+      "median_lease_years": 73.66666666666667
+    },
+    {
+      "year": 2024,
+      "transactions": 27832,
+      "addresses": 8195,
+      "median_price": 590000.0,
+      "median_psm": 6097.693531283139,
+      "median_area": 93.0,
+      "median_lease_years": 72.91666666666667
+    }
+  ],
+  "fixed_mix_cells": 86,
+  "fixed_mix_training_rows": 190618,
+  "fixed_mix": [
+    {
+      "year": 2017,
+      "numerator": 8713943432.0,
+      "denominator": 20035,
+      "fixed_mix_cell_median_average": 434936.0335413027
+    },
+    {
+      "year": 2018,
+      "numerator": 8558128184.0,
+      "denominator": 20035,
+      "fixed_mix_cell_median_average": 427158.88115797355
+    },
+    {
+      "year": 2019,
+      "numerator": 8511168365.0,
+      "denominator": 20035,
+      "fixed_mix_cell_median_average": 424814.99201397557
+    },
+    {
+      "year": 2020,
+      "numerator": 8709918140.0,
+      "denominator": 20035,
+      "fixed_mix_cell_median_average": 434735.12053905666
+    },
+    {
+      "year": 2021,
+      "numerator": 9784036318.0,
+      "denominator": 20035,
+      "fixed_mix_cell_median_average": 488347.20828550035
+    },
+    {
+      "year": 2022,
+      "numerator": 10750731606.8,
+      "denominator": 20035,
+      "fixed_mix_cell_median_average": 536597.5346543548
+    },
+    {
+      "year": 2023,
+      "numerator": 11400482738.0,
+      "denominator": 20035,
+      "fixed_mix_cell_median_average": 569028.337309708
+    },
+    {
+      "year": 2024,
+      "numerator": 12227637960.0,
+      "denominator": 20035,
+      "fixed_mix_cell_median_average": 610313.8487646618
+    }
+  ],
+  "mrt_comparisons": [
+    {
+      "comparison": "town_type_year",
+      "eligible_strata": 376,
+      "represented_rows": 78574,
+      "weighted_mean_within_stratum_gap_pct": 13.030472599298532,
+      "median_stratum_gap_pct": 12.921689225957744,
+      "share_positive_strata": 0.8031914893617021
+    },
+    {
+      "comparison": "plus_area_lease",
+      "eligible_strata": 210,
+      "represented_rows": 26904,
+      "weighted_mean_within_stratum_gap_pct": 16.260133941728245,
+      "median_stratum_gap_pct": 13.02648969315635,
+      "share_positive_strata": 0.9809523809523809
+    }
+  ],
+  "within_group_correlations": [
+    {
+      "feature": "floor_area_sqm",
+      "strata": 739,
+      "median_spearman": -0.2650254252202058,
+      "share_positive": 0.21380243572395127
+    },
+    {
+      "feature": "lease_years",
+      "strata": 739,
+      "median_spearman": 0.47324556745166857,
+      "share_positive": 0.8470906630581867
+    },
+    {
+      "feature": "storey_lower",
+      "strata": 739,
+      "median_spearman": 0.41232635677815355,
+      "share_positive": 0.9905277401894452
+    }
+  ],
+  "flat_type_support": [
+    {
+      "flat_type": "1 ROOM",
+      "transactions": 75
+    },
+    {
+      "flat_type": "2 ROOM",
+      "transactions": 3664
+    },
+    {
+      "flat_type": "3 ROOM",
+      "transactions": 46722
+    },
+    {
+      "flat_type": "4 ROOM",
+      "transactions": 83248
+    },
+    {
+      "flat_type": "5 ROOM",
+      "transactions": 48728
+    },
+    {
+      "flat_type": "EXECUTIVE",
+      "transactions": 14465
+    },
+    {
+      "flat_type": "MULTI-GENERATION",
+      "transactions": 80
+    }
+  ],
+  "lag1_distance_changed_rows": 259,
+  "station_age_hypothesis": "NOT TESTED: verified pre-2017 opening dates unavailable",
+  "causal_effects_estimated": false
+}

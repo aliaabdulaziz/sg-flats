@@ -1,0 +1,3 @@
+comparison,eligible_strata,represented_rows,weighted_mean_within_stratum_gap_pct,median_stratum_gap_pct,share_positive_strata
+town_type_year,376,78574,13.030473,12.921689,0.803191
+plus_area_lease,210,26904,16.260134,13.026490,0.980952

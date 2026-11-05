@@ -1,0 +1,5 @@
+match_status,transactions,addresses,median_price,median_psm,median_area,median_lease_years
+footprint_corroborated,96531,4782,470000.000000,5000.000000,93.000000,75.166667
+onemap_exact_no_polygon,110,4,430000.000000,4891.304348,92.000000,93.166667
+onemap_exact_polygon_corroborated,23340,1124,510000.000000,5405.405405,93.000000,73.583333
+street_crosswalk_inferred,77001,3700,480000.000000,4958.677686,100.000000,73.916667

@@ -16,6 +16,8 @@ Initial audit results are in [phase0-audit.md](phase0-audit.md). Downloads, prof
 
 ## Phase 1: Analysis and machine learning
 
+[Training-only exploratory analysis](eda-findings.md) is complete for the current snapshot. Executable analysis is in `analysis/`; aggregate tables and charts are in `reports/eda/`. Station age and station-opening effects remain untested. Baseline development and model validation are next.
+
 - Clean transaction and block data; create reproducible transforms and geographic features using a suitable projected coordinate system. Label straight-line distances honestly.
 - Investigate price distributions over time, town, flat type, lease, floor area and transport proximity. Avoid interpreting associations as causal effects.
 - Split by transaction time. Compare a simple recent local median baseline, a regularised regression baseline and a tree-based model. Fit preprocessing only on training data.
